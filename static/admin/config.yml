@@ -30,12 +30,10 @@ collections:
       - { label: 'Height', name: 'height', widget: 'string' }
       - { label: 'Width', name: 'width', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
-      - {
-          label: 'Gallery',
-          name: 'gallery',
-          widget: 'list',
-          allow_add: false,
-          fields:
-            - {label: 'Abstracts', name: 'abstracts', widget: string }
-            - {label: 'Figurative Abstract', name: 'figurative abstract', widget: string }
+      - { label: "Gallery",
+          name: "gallery",
+          widget: "select",
+          multiple: true,
+          options: ["Abstracts", "Figurative Abstract", "Contemporary", "Surreal"]
         }
+
