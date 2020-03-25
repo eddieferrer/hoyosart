@@ -4,9 +4,11 @@ backend:
 # media_folder: static/img
 public_folder: /img
 media_library:
-  name: uploadcare
+  name: cloudinary
   config:
-    publicKey: a19b882524838c45aed6
+    cloud_name: dzoeqswsj
+    api_key: 712995591669847
+    output_filename_only: true
 collections:
   - name: 'sections'
     label: 'Sections'
