@@ -4,7 +4,10 @@ backend:
 
 media_folder: static/img
 public_folder: /img
-
+media_library:
+  name: uploadcare
+  config:
+    publicKey: a19b882524838c45aed6
 collections:
   - name: 'sections'
     label: 'Sections'
@@ -29,7 +32,19 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Height', name: 'height', widget: 'string' }
       - { label: 'Width', name: 'width', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Image',
+          name: 'image',
+          widget: 'image',
+          media_library: {
+            name: 'uploadcare',
+            config: {
+              publicKey: a19b882524838c45aed6
+            },
+            settings: {
+              autoFilename: true
+            }
+          }
+        }
       - { label: "Gallery",
           name: "gallery",
           widget: "select",
