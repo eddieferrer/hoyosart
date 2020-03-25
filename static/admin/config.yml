@@ -6,16 +6,36 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
+  - name: 'sections'
+    label: 'Sections'
     format: 'json'
-    folder: 'assets/content/blog'
+    folder: 'assets/content/sections'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'artwork'
+    label: 'Artwork'
+    format: 'json'
+    folder: 'assets/content/artwork'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'string' }
+      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - {
+          label: 'Gallery',
+          name: 'gallery',
+          widget: 'list',
+          allow_add: false,
+          fields:
+            - {label: 'Abstracts', name: 'abstracts', widget: string }
+            - {label: 'Figurative Abstract', name: 'figurative abstract', widget: string }
+        }
