@@ -3,7 +3,7 @@
     <div>
       <div class="links">
         <div v-for="blog in blogPosts" :key="blog.slug">
-          <nuxt-link :to="'/blog/' + blog.slug">{{ blog.title }}</nuxt-link>
+          <nuxt-link :to="'/sections/' + blog.slug">{{ blog.title }}</nuxt-link>
         </div>
       </div>
     </div>
