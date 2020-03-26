@@ -1,12 +1,11 @@
 backend:
   name: git-gateway
   branch: master
-# media_folder: static/img
 public_folder: /img
 media_library:
   name: cloudinary
   config:
-    cloud_name: dzoeqswsj
+    cloud_name: hoyosartimagecloud
     api_key: 712995591669847
     output_filename_only: true
 collections:
@@ -33,6 +32,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Height', name: 'height', widget: 'string' }
       - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: "Gallery",
           name: "gallery",
