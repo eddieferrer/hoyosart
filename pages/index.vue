@@ -48,13 +48,13 @@
       <div class="bottom">
         <ul class="list-inline margin-bottom-10">
           <li>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><font-awesome-icon :icon="['fab', 'facebook-f']"/></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><font-awesome-icon :icon="['fab', 'twitter']"/></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><font-awesome-icon :icon="['fab', 'linkedin-in']"/></a>
           </li>
         </ul>
         <p>© 2020 FlaTheme</p>
