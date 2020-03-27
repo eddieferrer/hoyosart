@@ -1,21 +1,18 @@
 <template>
-  <div class="container">
-    <div>
-      <div class="links">
-        <div v-for="blog in blogPosts" :key="blog.slug">
-          <nuxt-link :to="'/sections/' + blog.slug">{{ blog.title }}</nuxt-link>
-        </div>
-      </div>
-    </div>
-  </div>
+  <article>
+    <h1>{{ blogPost.title }}</h1>
+    <div>{{ blogPost.body }}</div>
+  </article>
 </template>
 
 <script>
 export default {
-  computed: {
-    blogPosts() {
-      return this.$store.state.blogPosts
-    }
+  async asyncData({ params, payload }) {
+    if (payload) return { blogPost: payload }
+    else
+      return {
+        blogPost: await require(`~/assets/content/section/${params.section}.json`)
+      }
   }
 }
 </script>

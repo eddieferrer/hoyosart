@@ -1,0 +1,21 @@
+//
+// Background styles //
+//
+.bg-image {
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+    &.bg-image-gradient, &.bg-image-gradient-reverse, &.bg-image-gradient-dark, &.bg-image-gradient-dark-reverse {
+		&:before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&.bg-image-gradient { &:before { background-image: linear-gradient(to top, $color-white, $color-white-02); } }
+	&.bg-image-gradient-reverse { &:before { background-image: linear-gradient(to top, $color-white-02, $color-white); } }
+	&.bg-image-gradient-dark { &:before { background-image: linear-gradient(to top, $color-dark, $color-dark-02); } }
+	&.bg-image-gradient-dark-reverse { &:before { background-image: linear-gradient(to top, $color-dark-02, $color-dark); } }
+}

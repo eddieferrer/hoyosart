@@ -1,0 +1,1091 @@
+//
+// Button styles //
+//
+a {
+	color: $color-primary;
+	@include transition(linear 0.1s);
+	&:hover {
+		color: $color-dark;
+		text-decoration: none;
+	}
+}
+button {
+	background: transparent;
+	box-shadow: none;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+}
+a, button {
+	&:focus, &:active {
+		box-shadow: none;
+		outline: 0;
+	}
+}
+
+.button {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	background: rgb(230, 230, 230);
+	border: 0;
+	padding: 5px 10px;
+	color: $color-dark;
+	font: 400 14px $font-family-secondary;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	@include transition(ease-out 0.2s);
+	i {
+		margin-right: 8px;
+		font-size: 15px;
+	}
+	&:hover {
+		color: $color-dark;
+	}
+}
+
+//
+// Button Sizes //
+//
+.button-xs { padding: 8px 14px; }
+.button-sm { padding: 10px 22px; }
+.button-md { padding: 14px 34px; }
+.button-lg { padding: 16px 42px; }
+.button-xl { padding: 18px 50px; }
+.button-fullwidth { width: 100%; text-align: center; }
+
+//
+// Button - Shadow //
+//
+.button-shadow, a.button-shadow {
+	@include box-shadow(0 2px 20px -6px rgba(24,27,30,0.14));
+	&:hover, &:focus {
+		@include box-shadow(0 6px 30px -4px rgba(24,27,30,0.2));
+	}
+}
+.button-hover-float, a.button-hover-float {
+	&:hover {
+		@include transform(translateY(-4px));
+	}
+}
+.button-hover-scale, a.button-hover-scale {
+	&:hover, &:focus {
+		@include transform(scale(1.03));
+	}
+	&.button-circle {
+		&:hover, &:focus {
+			@include transform(scale(1.04));
+		}
+	}
+}
+.button-hover-shrink, a.button-hover-shrink {
+	&:hover, &:focus {
+		@include transform(scale(0.97));
+	}
+	&.button-circle {
+		&:hover, &:focus {
+			@include transform(scale(0.96));
+		}
+	}
+}
+
+//
+// Button Style - Regular //
+//
+.button-gray, a.button-gray {
+	background: $bg-gray;
+	color: $color-dark-09;
+	&:hover, &:focus {
+		background: $button-gray;
+		color: $color-dark;
+	}
+}
+.button-dark, a.button-dark {
+	background: $color-dark-09;
+	color: $color-white-09;
+	&:hover, &:focus {
+		background: $bg-dark;
+		color: $color-white;
+	}
+}
+.button-white, a.button-white {
+	background: $color-white-09;
+	color: $color-dark-09;
+	&:hover, &:focus {
+		background: $color-white;
+		color: $color-dark;
+	}
+}
+.button-outline-gray, a.button-outline-gray {
+	background: transparent;
+	border: 1px solid $color-dark-02;
+	color: $color-dark-09;
+	&:hover, &:focus {
+		border-color: $color-dark;
+		color: $color-dark;
+	}
+}
+.button-outline-dark, a.button-outline-dark {
+	background: transparent;
+	border: 1px solid $color-dark-08;
+	color: $color-dark-09;
+	&:hover, &:focus {
+		border-color: $color-dark-02;
+		color: $color-dark;
+	}
+}
+.button-outline-white, a.button-outline-white {
+	background: transparent;
+	border: 1px solid $color-white-03;
+	color: $color-white-09;
+	&:hover, &:focus {
+		border-color: $color-white;
+		color: $color-white;
+	}
+}
+.button-outline-white-2, a.button-outline-white-2 {
+	background: transparent;
+	border: 1px solid $color-white;
+	color: $color-white-09;
+	&:hover, &:focus {
+		border-color: $color-white-03;
+		color: $color-white;
+	}
+}
+
+//
+// Button - Fancy //
+//
+a, button {
+	&[class*=' button-fancy-1'], &[class^='button-fancy-1'] {
+		z-index: 1;
+		overflow: visible;
+		background: transparent;
+		border: 0;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include transform(scaleX(1));
+			z-index: -1;
+			opacity: 1;
+			width: 100%;
+			height: 100%;
+			@include transition(ease-out 0.2s);
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include transform(scaleX(0.6));
+			opacity: 0;
+			width: 100%;
+			height: 100%;
+			border: 1px solid $color-dark-09;
+			border-right: 0;
+			border-left: 0;
+			@include transition(ease-out 0.2s);
+		}
+		&:hover {
+			&:before {
+				@include transform(scaleX(0.6));
+				opacity: 0;
+			}
+			&:after {
+				@include transform(scaleX(1));
+				opacity: 1;
+			}
+		}
+	}
+}
+.button-fancy-1-gray, a.button-fancy-1-gray {
+	&:before { background: $color-dark-01; }
+}
+.button-fancy-1-dark, a.button-fancy-1-dark {
+	color: $color-white;
+	&:before { background: $button-dark; }
+}
+.button-fancy-1-white, a.button-fancy-1-white {
+	color: $color-dark;
+	&:before { background: $color-white; }
+	&:after { border-color: $color-white; }
+	&:hover { color: $color-white; }
+}
+.button-fancy-1-outline-gray, a.button-fancy-1-outline-gray {
+	&:before { border: 1px solid $color-dark-02; }
+}
+.button-fancy-1-outline-white, a.button-fancy-1-outline-white {
+	color: $color-white;
+	&:before { border: 1px solid $color-white-02; }
+	&:after { border-color: $color-white; }
+	&:hover { color: $color-white; }
+}
+
+a, button {
+	&[class*=' button-fancy-2'], &[class^='button-fancy-2'] {
+		z-index: 1;
+		overflow: visible;
+		background: transparent;
+		border: 0;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include transform(scaleY(1));
+			z-index: -1;
+			opacity: 1;
+			width: 100%;
+			height: 100%;
+			@include transition(ease-out 0.2s);
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include transform(scaleY(0.2));
+			opacity: 0;
+			width: 100%;
+			height: 100%;
+			border: 1px solid $color-dark-09;
+			@include transition(ease-out 0.2s);
+		}
+		&:hover {
+			&:before {
+				@include transform(scaleY(0.2));
+				opacity: 0;
+			}
+			&:after {
+				@include transform(scaleY(1));
+				opacity: 1;
+			}
+		}
+	}
+}
+.button-fancy-2-gray, a.button-fancy-2-gray {
+	&:before {
+		background: $color-dark-01;
+	}
+}
+.button-fancy-2-dark, a.button-fancy-2-dark {
+	color: $color-white;
+	&:before {
+		background: $button-dark;
+	}
+}
+.button-fancy-2-white, a.button-fancy-2-white {
+	color: $color-dark;
+	&:before {
+		background: $color-white;
+	}
+	&:after {
+		border-color: $color-white;
+	}
+	&:hover {
+		color: $color-white;
+	}
+}
+.button-fancy-2-outline-gray, a.button-fancy-2-outline-gray {
+	&:before {
+		border: 1px solid $color-dark-02;
+	}
+	&:after {
+		z-index: -1;
+		background: $color-dark;
+		border: 0;
+	}
+	&:hover {
+		color: $color-white;
+	}
+}
+.button-fancy-2-outline-dark, a.button-fancy-2-outline-dark {
+	&:before {
+		border: 1px solid $color-dark-09;
+	}
+	&:after {
+		z-index: -1;
+		background: $color-dark;
+	}
+	&:hover {
+		color: $color-white;
+	}
+}
+.button-fancy-2-outline-white, a.button-fancy-2-outline-white {
+	color: $color-white;
+	&:before {
+		border: 1px solid $color-white-09;
+	}
+	&:after {
+		z-index: -1;
+		background: $color-white;
+	}
+	&:hover {
+		color: $color-dark;
+	}
+}
+
+a, button {
+	&[class*=' button-fancy-3'], &[class^='button-fancy-3'] {
+		z-index: 1;
+		overflow: visible;
+		background: transparent;
+		border: 0;
+		height: 60px;
+		line-height: 60px;
+		padding: 0 28px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 60px;
+			height: 60px;
+			border-radius: 40px;
+			@include transition(ease-out 0.18s);
+		}
+		&:hover {
+			&:before {
+				width: 100%;
+			}
+		}
+		&.button-xs {
+			height: 40px;
+			line-height: 40px;
+			padding: 0 18px;
+			&:before {
+				width: 40px;
+				height: 40px;
+			}
+			&:hover {
+				&:before { width: 100%; }
+			}
+		}
+		&.button-sm {
+			height: 50px;
+			line-height: 50px;
+			padding: 0 23px;
+			&:before {
+				width: 50px;
+				height: 50px;
+			}
+			&:hover {
+				&:before { width: 100%; }
+			}
+		}
+		&.button-lg {
+			height: 70px;
+			line-height: 70px;
+			padding: 0 33px;
+			&:before {
+				width: 70px;
+				height: 70px;
+			}
+			&:hover {
+				&:before { width: 100%; }
+			}
+		}
+		&.button-xl {
+			height: 80px;
+			line-height: 80px;
+			padding: 0 38px;
+			&:before {
+				width: 80px;
+				height: 80px;
+			}
+			&:hover {
+				&:before { width: 100%; }
+			}
+		}
+	}
+}
+.button-fancy-3-gray {
+	color: $color-dark-09;
+	&:before { background: $bg-light-gray; }
+	&:hover { color: $color-dark; }
+}
+.button-fancy-3-outline-gray {
+	color: $color-dark-09;
+	&:before { border: 1px solid $color-dark-01; }
+	&:hover { color: $color-dark; }
+}
+.button-fancy-3-white {
+	color: $color-white-09;
+	&:before { background: $color-white-01; }
+	&:hover { color: $color-white; }
+}
+.button-fancy-3-outline-white {
+	color: $color-white-09;
+	&:before { border: 1px solid $color-white-02; }
+	&:hover { color: $color-white; }
+}
+
+
+//
+// Text Buttons //
+//
+.button-text-1, 
+.button-text-2, 
+.button-text-3 {
+	position: relative;
+	display: inline-block;
+	color: $color-dark;
+	font-family: $font-family-secondary;
+}
+.button-text-1 {
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: $color-dark-02;
+		width: 100%;
+		height: 1px;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: $color-dark;
+		height: 1px;
+		@include transition(ease-out 0.24s);
+		@include animation(button-line-out 0.24s ease-out both);
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+			@include animation(button-line-in 0.24s ease-out both);
+		}
+	}
+}
+.button-text-2 {
+	&:before {
+		content: '';
+		position: absolute;
+		top: 40%;
+		right: 0;
+		left: 0;
+		background: $color-dark-02;
+		height: 40%;
+		@include transition(ease-out 0.24s);
+		@include animation(button-line-out 0.24s ease-out both);
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: $color-dark;
+		height: 1px;
+		@include transition(ease-out 0.24s);
+		@include animation(button-line-in 0.24s ease-out both);
+	}
+	&:hover {
+		&:before { @include animation(button-line-in 0.24s ease-out both); }
+		&:after { @include animation(button-line-out 0.24s ease-out both); }
+	}
+}
+.button-text-3 {
+	padding-left: 30px;
+	@include transition(ease-out 0.18s);
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		@include transform(translateY(-50%));
+		background: $color-dark;
+		width: 20px;
+		height: 1px;
+		@include transition(ease-out 0.18s);
+	}
+	&:hover {
+		padding-left: 40px;
+		&:before {
+			width: 30px;
+		}
+	}
+}
+@-webkit-keyframes button-line-out {
+	0% {
+		@include transform(scaleX(1));
+		@include transform-origin(100% 50%);
+	}
+	100% {
+		@include transform(scaleX(0));
+		@include transform-origin(100% 50%);
+	}
+}
+@keyframes button-line-out {
+	0% {
+		@include transform(scaleX(1));
+		@include transform-origin(100% 50%);
+	}
+	100% {
+		@include transform(scaleX(0));
+		@include transform-origin(100% 50%);
+	}
+}
+@-webkit-keyframes button-line-in {
+	0% {
+		@include transform(scaleX(0));
+		@include transform-origin(0 50%);
+	}
+	100% {
+		@include transform(scale(1));
+		@include transform-origin(0 50%);
+	}
+}
+@keyframes button-line-in {
+	0% {
+		@include transform(scaleX(0));
+		@include transform-origin(0 50%);
+	}
+	100% {
+		@include transform(scale(1));
+		@include transform-origin(0 50%);
+	}
+}
+
+div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black {
+	.button-text-1, 
+	.button-text-2, 
+	.button-text-3 {
+		color: $color-white-08;
+		&:hover {
+			color: $color-white;
+		}
+	}
+	.button-text-1 {
+		&:before { background: $color-white-03; }
+		&:after { background: $color-white; }
+	}
+	.button-text-2 {
+		&:before { background: $color-white-04; }
+		&:after { background: $color-white; }
+	}
+	.button-text-3 {
+		&:before { background: $color-white-08; }
+		&:hover {
+			&:before { background: $color-white; }
+		}
+	}
+}
+
+
+//
+// Circle Button //
+//
+.button-circle, a.button-circle {
+	background: rgb(230, 230, 230);
+	display: inline-block;
+	border-radius: 50%;
+	color: $color-dark;
+	text-align: center;
+	@include transition(ease-out 0.2s);
+	&:hover {
+		color: $color-primary;
+	}
+}
+
+.button-circle-xs {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	i { line-height: 32px; }
+}
+.button-circle-sm {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	i { line-height: 40px; }
+}
+.button-circle-md {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	i { line-height: 50px; }
+}
+.button-circle-lg {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	i { line-height: 60px; }
+}
+.button-circle-xl {
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	i { line-height: 70px; }
+}
+.button-circle-2xl {
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	i { line-height: 80px; }
+}
+
+
+//
+// Circle Button //
+//
+.button-circle-gray, a.button-circle-gray {
+	background: $bg-gray;
+	color: $color-dark-09;
+	&:hover, &:focus {
+		background: $button-gray;
+		color: $color-dark;
+	}
+}
+.button-circle-dark, a.button-circle-dark {
+	background: $color-dark-09;
+	color: $color-white-08;
+	&:hover, &:focus {
+		background: $color-dark;
+		color: $color-white;
+	}
+}
+.button-circle-black, a.button-circle-black {
+	background: $color-black;
+	color: $color-white-08;
+	&:hover, &:focus {
+		background: $color-black;
+		color: $color-white;
+	}
+}
+.button-circle-white, a.button-circle-white {
+	background: $color-white-09;
+	color: $color-dark-09;
+	&:hover, &:focus {
+		background: $color-white;
+		color: $color-dark;
+	}
+}
+.button-circle-outline-gray, a.button-circle-outline-gray {
+	background: transparent;
+	border: 1px solid $color-dark-02;
+	color: $color-dark-09;
+	&:hover, &:focus {
+		border-color: $color-dark;
+		color: $color-dark;
+	}
+}
+.button-circle-outline-dark, a.button-circle-outline-dark {
+	background: transparent;
+	border: 1px solid $color-dark-08;
+	color: $color-dark-09;
+	&:hover, &:focus {
+		border-color: $color-dark-02;
+		color: $color-dark;
+	}
+}
+.button-circle-outline-white, a.button-circle-outline-white {
+	background: transparent;
+	border: 1px solid $color-white-03;
+	color: $color-white-09;
+	&:hover, &:focus {
+		border-color: $color-white;
+		color: $color-white;
+	}
+}
+.button-circle-outline-white-2, a.button-circle-outline-white-2 {
+	background: transparent;
+	border: 1px solid $color-white;
+	color: $color-white-09;
+	&:hover, &:focus {
+		border-color: $color-white-02;
+		color: $color-white;
+	}
+}
+
+
+//
+// Circle Button - Hover Slide //
+//
+.button-circle-hover-slide {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	i {
+		position: absolute;
+		left: 50%;
+		@include transition(ease-out 0.2s);
+		&:first-child {
+			top: 50%;
+			@include transform(translateX(-50%) translateY(-50%));
+		}
+		&:last-child {
+			top: 100%;
+			@include transform(translateX(-50%));
+		}
+	}
+	&:hover {
+		i {
+			&:first-child {
+				top: -100%;
+				@include transform(translateX(-50%) translateY(0));
+			}
+			&:last-child {
+				top: 50%;
+				@include transform(translateX(-50%) translateY(-50%));
+			}
+		}
+	}
+}
+
+//
+// Circle Button - Animations //
+//
+.button-circle-animation-drop, a.button-circle-animation-drop {
+	position: relative;
+	@include transition(ease-out 0.3s);
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		border: 2px solid $color-dark-02;
+		border-radius: 50%;
+		@include animation(button-drop 2s ease-out infinite);
+	}
+	&:hover {
+		@include transform(scale(0.92));
+	}
+	&.button-circle-white, &.button-circle-outline-white, &.button-circle-outline-white-2 {
+		&:before {
+			border-color: $color-white-04;
+		}
+	}
+}
+@-webkit-keyframes button-drop {
+	0% {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+	}
+	60% {
+		opacity: 0;
+		width: 160%;
+		height: 160%;
+	}
+	100% {
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+@keyframes button-drop {
+	0% {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+	}
+	60% {
+		opacity: 0;
+		width: 160%;
+		height: 160%;
+	}
+	100% {
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.button-circle-animation-drop-2, a.button-circle-animation-drop-2 {
+	position: relative;
+	@include transition(ease-out 0.3s);
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+		z-index: -1;
+		opacity: 1;
+		background: $color-dark-01;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		@include animation(button-drop 2s ease-out infinite);
+	}
+	&:hover {
+		@include transform(scale(0.92));
+	}
+	&.button-circle-white, &.button-circle-outline-white, &.button-circle-outline-white-2 {
+		&:before {
+			background: $color-white-02;
+		}
+	}
+}
+@-webkit-keyframes button-drop-2 {
+	0% {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+	}
+	60% {
+		opacity: 0;
+		width: 150%;
+		height: 150%;
+	}
+	100% {
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+@keyframes button-drop-2 {
+	0% {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+	}
+	60% {
+		opacity: 0;
+		width: 150%;
+		height: 150%;
+	}
+	100% {
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+//
+// Circle Text Button //
+//
+a[class^='button-ct'] {
+	position: relative;
+	display: inline-block;
+	height: 60px;
+	padding-left: 76px;
+	.button-ct-icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: inline-block;
+		background: transparent;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 60px;
+		font-size: 17px;
+		@include transition(ease-out 0.2s);
+	}
+	.button-ct-text {
+		position: relative;
+		top: 50%;
+		@include transform(translateY(-50%));
+		display: inline-block;
+		font-size: 17px;
+		color: $color-dark;
+		@include transition(ease-out 0.2s);
+	}
+	&:hover {
+		.button-ct-icon {
+			@include transform(scale(0.9));
+		}
+		.button-ct-text {
+			@include transform(translateY(-50%) translateX(-3px));
+		}
+	}
+	&.button-ct-xs {
+		height: 40px;
+		padding-left: 54px;
+		.button-ct-icon {
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			font-size: 14px;
+		}
+		.button-ct-text {
+			font-size: 15px;
+		}
+		&:hover {
+			.button-ct-text {
+				@include transform(translateY(-50%) translateX(-2px));
+			}
+		}
+	}
+	&.button-ct-sm {
+		height: 50px;
+		padding-left: 64px;
+		.button-ct-icon {
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 15px;
+		}
+		.button-ct-text {
+			font-size: 15px;
+		}
+		&:hover {
+			.button-ct-text {
+				@include transform(translateY(-50%) translateX(-2px));
+			}
+		}
+	}
+	&.button-ct-lg {
+		height: 70px;
+		padding-left: 86px;
+		.button-ct-icon {
+			width: 70px;
+			height: 70px;
+			line-height: 70px;
+			font-size: 18px;
+		}
+	}
+	&.button-ct-xl {
+		height: 80px;
+		padding-left: 96px;
+		.button-ct-icon {
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			font-size: 18px;
+		}
+		&:hover {
+			.button-ct-text {
+				@include transform(translateY(-50%) translateX(-4px));
+			}
+		}
+	}
+}
+.button-ct-gray, a.button-ct-gray {
+	.button-ct-icon {
+		background: $bg-gray;
+		color: $color-dark-09;
+	}
+	&:hover {
+		.button-ct-icon {
+			background: $button-gray;
+			color: $color-dark;
+		}
+	}
+}
+.button-ct-dark, a.button-ct-dark {
+	.button-ct-icon {
+		background: $color-dark-09;
+		color: $color-white-09;
+	}
+	&:hover {
+		.button-ct-icon {
+			background: $color-dark;
+			color: $color-white;
+		}
+	}
+}
+.button-ct-white, a.button-ct-white {
+	.button-ct-icon {
+		background: $color-white-09;
+		color: $color-dark-09;
+	}
+	&:hover {
+		.button-ct-icon {
+			background: $color-white;
+			color: $color-dark;
+		}
+	}
+}
+.button-ct-outline-gray, a.button-ct-outline-gray {
+	.button-ct-icon {
+		border: 1px solid $color-dark-02;
+		color: $color-dark;
+	}
+	&:hover {
+		.button-ct-icon {
+			border-color: $color-dark;
+		}
+	}
+}
+.button-ct-outline-dark, a.button-ct-outline-dark {
+	.button-ct-icon {
+		border: 1px solid $color-dark-08;
+		color: $color-dark;
+	}
+	&:hover {
+		.button-ct-icon {
+			border-color: $color-dark-02;
+		}
+	}
+}
+.button-ct-outline-white, a.button-ct-outline-white {
+	.button-ct-icon {
+		border: 1px solid $color-white-03;
+		color: $color-white-09;
+	}
+	&:hover {
+		.button-ct-icon {
+			border-color: $color-white;
+			color: $color-white;
+		}
+	}
+}
+.button-ct-outline-white-2, a.button-ct-outline-white-2 {
+	.button-ct-icon {
+		border: 1px solid $color-white;
+		color: $color-white;
+	}
+	&:hover {
+		.button-ct-icon {
+			border-color: $color-white-03;
+			color: $color-white;
+		}
+	}
+}
+div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black {
+	a[class^='button-ct'] {
+		.button-ct-text { color: $color-white-09; }
+		&:hover {
+			.button-ct-text { color: $color-white; }
+		}
+	}
+}
+
+//
+// Button Font styles //
+//
+.button-font-2 {
+	font-weight: 400;
+	font-size: 15px;
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+.font-extra-small {
+	.button, &.button { font-size: 12px; }
+	.button-font-2, &.button-font-2 { font-size: 13px; }
+}
+.font-small {
+	.button, &.button { font-size: 13px; }
+	.button-font-2, &.button-font-2 { font-size: 14px; }
+}
+.font-family-primary {
+	.button, &.button { font-family: $font-family-primary; }
+}
+
+//
+// Button Border //
+//
+.button-border-2, a.button-border-2 {
+	border-width: 2px;
+}
+
+//
+// Button - Radius //
+//
+.button-radius { border-radius: 0.5em; }
+.button-rounded { border-radius: 50px; }

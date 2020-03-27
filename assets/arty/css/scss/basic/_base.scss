@@ -1,0 +1,392 @@
+//
+// Base styles //
+//
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	overflow-x: hidden;
+}
+
+.wrapper {
+	position: relative;
+	z-index: 1;
+	width: auto;
+	min-height: 100%;
+}
+@include breakpoint-less(lg) {
+	.wrapper {
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 991;
+			background: $color-dark-06;
+			width: 100%;
+			height: 100%;
+			visibility: hidden;
+			opacity: 0;
+			@include transition(ease-out 0.3s);
+		}
+		&.overlay {
+			&:after {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+//
+// Container, Row //
+//
+.container, .container-fluid {
+	position: relative;
+	padding: 0 30px;
+}
+.row {
+	margin-bottom: -30px;
+	div[class^="col-"]:not(.row) {
+		margin-bottom: 30px;
+	}
+	.form-row {
+		div[class^="col-"]:not(.row) {
+			margin-bottom: 0;
+			padding-right: 8px;
+			padding-left: 8px;
+		}
+	}
+}
+
+//
+// Column Spacing //
+//
+@include breakpoint-above(md) {
+	.col-spacing-70 {
+		margin-right: -35px;
+		margin-bottom: -70px;
+		margin-left: -35px;
+		div[class^="col-"]:not(.row) {
+			margin-bottom: 70px;
+			padding: 0 35px;
+		}
+	}
+	.col-spacing-60 {
+		margin-right: -30px;
+		margin-bottom: -60px;
+		margin-left: -30px;
+		div[class^="col-"]:not(.row) {
+			margin-bottom: 60px;
+			padding: 0 30px;
+		}
+	}
+	.col-spacing-50 {
+		margin-right: -25px;
+		margin-bottom: -50px;
+		margin-left: -25px;
+		div[class^="col-"]:not(.row) {
+			margin-bottom: 50px;
+			padding: 0 25px;
+		}
+	}
+	.col-spacing-40 {
+		margin-right: -20px;
+		margin-bottom: -40px;
+		margin-left: -20px;
+		div[class^="col-"]:not(.row) {
+			margin-bottom: 40px;
+			padding: 0 20px;
+		}
+	}
+	.col-spacing-70,
+	.col-spacing-60,
+	.col-spacing-50,
+	.col-spacing-40 {
+		.row {
+			margin-right: -15px;
+			margin-bottom: -30px;
+			margin-left: -15px;
+			div[class^="col-"]:not(.row) {
+				margin-bottom: 30px;
+				padding: 0 15px;
+			}
+		}
+	}
+	.container-fluid {
+		.col-spacing-70 {
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+		.col-spacing-60 {
+			margin-right: 0;
+			margin-left: 0;
+		}
+		.col-spacing-50 {
+			margin-right: -5px;
+			margin-left: -5px;
+		}
+		.col-spacing-40 {
+			margin-right: -10px;
+			margin-left: -10px;
+		}
+	}
+}
+
+.col-spacing-20, 
+.col-spacing-10, 
+.col-spacing-0 {
+	.row {
+		margin-right: -15px;
+		margin-bottom: -30px;
+		margin-left: -15px;
+		div[class^="col-"]:not(.row) {
+			margin-bottom: 30px;
+			padding: 0 15px;
+		}
+	}
+}
+.col-spacing-20 {
+	margin-right: -10px;
+	margin-bottom: -20px;
+	margin-left: -10px;
+	div[class^="col-"]:not(.row) {
+		margin-bottom: 20px;
+		padding: 0 10px;
+	}
+}
+.col-spacing-10 {
+	margin-right: -5px;
+	margin-bottom: -10px;
+	margin-left: -5px;
+	div[class^="col-"]:not(.row) {
+		margin-bottom: 10px;
+		padding: 0 5px;
+	}
+}
+.col-spacing-0 {
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	div[class^="col-"]:not(.row) {
+		margin-bottom: 0;
+		padding: 0;
+	}
+}
+.container-fluid {
+	.col-spacing-20 {
+		margin-right: -20px;
+		margin-left: -20px;
+	}
+	.col-spacing-10 {
+		margin-right: -25px;
+		margin-left: -25px;
+	}
+	.col-spacing-0 {
+		margin-right: -30px;
+		margin-left: -30px;
+	}
+}
+
+//
+// Positioning //
+//
+.top {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+.middle {
+	position: relative;
+	top: 50%;
+	@include transform(translateY(-50%));
+}
+.bottom {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+//
+// Blockquote Styles //
+//
+.blockquote {
+	border-left: 3px solid $color-dark-01;
+	padding: 24px 30px;
+	p {
+		font-weight: $font-weight-light;
+	}
+	.blockquote-footer {
+		margin-top: 10px;
+		&:before { padding-right: 6px; }
+		h1,h2,h3,h4,h5,h6 {
+			display: inline-block;
+			margin: 0;
+		}
+	}
+}
+div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black {
+	.blockquote {
+		border-color: $color-white-02;
+		.blockquote-footer {
+			color: $color-white;
+		}
+	}
+}
+
+//
+// Pre(Preformatted text) //
+//
+pre {
+	border: 1px solid $color-dark-02;
+	border-radius: 5px;
+	padding: 0 20px;
+	color: $color-primary;
+	line-height: 28px;
+}
+div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black {
+	pre {
+		border-color: $color-white-02;
+		color: $color-white-06;
+	}
+}
+
+//
+// Pagination Styles //
+//
+.pagination {
+	margin: 0 -2px;
+	padding: 0;
+	.page-item {
+		margin: 0 2px;
+		text-align: center;
+		&:last-child {
+			margin-right: 0;
+		}
+		.page-link {
+			background: transparent;
+			min-width: 34px;
+			height: 34px;
+			border: 0;
+			border-radius: 20px;
+			padding: 0;
+			color: $color-primary;
+			font-size: 14px;
+			line-height: 34px;
+			@include transition(linear 0.1s);
+			&:before {
+				content: '';
+				position: absolute;
+				top: 2px;
+				right: 2px;
+				bottom: 2px;
+				left: 2px;
+				opacity: 0;
+				border-radius: 50%;
+				background: $color-dark-01;
+				@include transition(linear 0.1s);
+			}
+			&:hover {
+				color: $color-dark;
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+		&.active {
+			.page-link {
+				color: $color-dark;
+				&:before {
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&.pagination-sm {
+		.page-item {
+			.page-link {
+				min-width: 30px;
+				height: 30px;
+				border-radius: 20px;
+				padding: 0;
+				line-height: 30px;
+			}
+		}
+	}
+	&.pagination-lg {
+		.page-item {
+			.page-link {
+				min-width: 40px;
+				height: 40px;
+				border-radius: 20px;
+				padding: 0;
+				line-height: 40px;
+			}
+		}
+	}
+}
+div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black {
+	.pagination {
+		.page-item {
+			.page-link {
+				color: $color-white-08;
+				&:before {
+					background: $color-white-01;
+				}
+				&:hover {
+					color: $color-white;
+				}
+			}
+			&.active {
+				.page-link {
+					color: $color-white;
+				}
+			}
+		}
+	}
+}
+
+//
+// Horizontal Rule //
+//
+hr {
+	border-color: $color-dark-02;
+}
+div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black {
+	hr {
+		border-color: $color-white-02;
+	}
+}
+
+//
+// Sal (Scroll Animation Library) //
+//
+[data-sal] {
+	@include transition-duration(0.5s);
+}
+
+//
+// Scroll To Top //
+//
+.scrolltotop {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	@include transform(translateY(3px));
+	z-index: 989;
+	visibility: hidden;
+	opacity: 0;
+	@include transition(ease-out 0.2s);
+	&.scrolltotop-show {
+		@include transform(translateY(0));
+		visibility: visible;
+		opacity: 1;
+	}
+}

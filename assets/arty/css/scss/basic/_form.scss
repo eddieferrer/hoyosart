@@ -1,0 +1,191 @@
+//
+// Forms //
+//
+.form-row {
+	margin-right: -8px;
+	margin-left: -8px;
+	div[class^="col-"], div[class*=" col-"], .col {
+		margin: 0;
+		padding-right: 8px;
+		padding-left: 8px;
+	}
+}
+input, 
+textarea {
+	background: transparent;
+	width: 100%;
+	border: 1px solid $color-dark-01;
+	margin-bottom: 1rem;
+	padding: 15px 20px;
+	box-shadow: none;
+	font: 400 14px $font-family-primary;
+	@include transition(ease-out 0.2s);
+	&:focus, &:active {
+		outline: 0;
+		box-shadow: none;
+	}
+}
+textarea {
+	height: 140px;
+}
+input, textarea, .form-control {
+	color: $color-primary;
+	&::-webkit-input-placeholder { color: $color-primary-lighter; }
+	&::-moz-placeholder { color: $color-primary-lighter; }
+	&:-ms-placeholder { color: $color-primary-lighter; }
+	&::-ms-placeholder { color: $color-primary-lighter; }
+	&::placeholder { color: $color-primary-lighter; }
+	&:focus {
+		border-color: $color-dark-02;
+	}
+}
+input {
+	&[type="checkbox"], 
+	&[type="radio"] {
+	  width: auto;
+	}
+}
+label {
+	font-size: 14px;
+}
+.form-control {
+	background: transparent;
+	height: auto;
+	border: 1px solid $color-dark-01;
+	border-radius: 0;
+	padding: 15px 20px;
+	&:focus {
+		background: transparent;
+		box-shadow: none;
+	}
+	&:read-only {
+		background: $button-gray;
+		border: 0;
+	}
+	&.form-control-sm {
+		padding: 5px 10px;
+	}
+}
+.form-control-plaintext {
+	border: 0;
+}
+.form-check-input:disabled ~ .form-check-label {
+	color: $color-primary-lighter;
+}
+.required {
+	&:after {
+		content: '*';
+		padding-left: 3px;
+	}
+}
+
+//
+// Select //
+//
+select {
+	margin-bottom: 16px;
+}
+.custom-select {
+	background-color: transparent;
+	width: auto;
+	min-width: 160px;
+	height: auto;
+	border-radius: 0;
+	padding: 15px 20px;
+	border-color: $color-dark-01;
+	color: $color-primary;
+	font-size: 14px;
+	line-height: 1.4;
+	@include transition(ease-out 0.2s);
+	&:focus {
+		border-color: $color-dark-02;
+		outline: 0;
+		box-shadow: none;
+	}
+}
+//
+// Form Styles 2,3,4 //
+//
+form.style-3, .style-3, 
+form.style-4, .style-4 {
+	input, textarea, .custom-select, .form-control {
+		margin-bottom: 20px;
+		padding: 0 0 10px;
+		border-top-width: 0;
+		border-right-width: 0;
+		border-bottom-width: 1px;
+		border-left-width: 0;
+	}
+}
+form.style-2, .style-2, 
+form.style-4, .style-4 {
+	input, textarea, .custom-select, .form-control {
+		&:focus {
+			border-color: $color-dark-09;
+		}
+	}
+}
+
+//
+// Form Style 5 //
+//
+form.style-5, .style-5 {
+	input, textarea, .custom-select, .form-control {
+		background: $bg-light-gray;
+		border: 0;
+		&:focus {
+			background: $bg-gray;
+		}
+	}
+}
+.bg-gray, .bg-gray-lighter {
+	form.style-5, .style-5 {
+		input, textarea, .custom-select, .form-control {
+			background: $color-white;
+			&:focus {
+				background: $color-white;
+			}
+		}
+	}
+}
+
+div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black {
+	input, textarea, .form-control {
+		background: transparent;
+		border-color: $color-white-02;
+		color: $color-white-07;
+		&::-webkit-input-placeholder { color: $color-white-05; }
+		&::-moz-placeholder { color: $color-white-05; }
+		&:-ms-placeholder { color: $color-white-05; }
+		&::-ms-placeholder { color: $color-white-05; }
+		&::placeholder { color: $color-white-05; }
+		&:focus {
+			border-color: $color-white-03;
+		}
+	}
+	.custom-select {
+		background: transparent;
+		border-color: $color-white-02;
+		color: $color-white-07;
+		&:focus {
+			border-color: $color-white-03;
+		}
+	}
+	form.style-2, .style-2, 
+	form.style-4, .style-4 {
+		input, textarea, .custom-select, .form-control {
+			&:focus {
+				border-color: $color-white;
+			}
+		}
+	}
+	form.style-5, .style-5 {
+		input, textarea, .custom-select, .form-control {
+			background: $color-white-01;
+			border: 0;
+			&:focus {
+				background: $color-white-02;
+			}
+		}
+	}
+}

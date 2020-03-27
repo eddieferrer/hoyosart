@@ -14,7 +14,11 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    bodyAttrs: {
+      'data-preloader': '1',
+      class: 'sm-spacer-left loaded'
+    }
   },
   /*
    ** Customize the progress-bar color
@@ -23,11 +27,21 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '@/assets/arty/plugins/magnific-popup/magnific-popup.min.css',
+    '@/assets/arty/plugins/owl-carousel/owl.carousel.min.css',
+    '@/assets/arty/plugins/owl-carousel/owl.theme.default.min.css',
+    '@/assets/arty/plugins/justified-gallery/justified-gallery.min.css',
+    '@/assets/arty/plugins/sal/sal.min.css',
+    '@/assets/arty/css/scss/main.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css',
+    '@/assets/arty/plugins/themify/themify-icons.min.css',
+    '@/assets/arty/plugins/simple-line-icons/css/simple-line-icons.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/fontawesome.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -57,10 +71,10 @@ export default {
     routes() {
       const fs = require('fs')
       const path = require('path')
-      return fs.readdirSync('./assets/content/sections').map((file) => {
+      return fs.readdirSync('./assets/content/section').map((file) => {
         return {
-          route: `/sections/${path.parse(file).name}`, // Return the slug
-          payload: require(`./assets/content/sections/${file}`)
+          route: `/section/${path.parse(file).name}`, // Return the slug
+          payload: require(`./assets/content/section/${file}`)
         }
       })
     }

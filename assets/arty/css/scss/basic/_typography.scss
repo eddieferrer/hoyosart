@@ -1,0 +1,94 @@
+//
+// Typography //
+//
+body {
+	color: $color-primary;
+	font-family: $font-family-primary;
+	font-weight: 400;
+	letter-spacing: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom: 10px;
+	letter-spacing: -0.3px;
+	color: $color-dark;
+	font-family: $font-family-secondary;
+	font-weight: $font-weight-semi-bold;
+}
+h1 {
+	font-size: 2.5em; /* 40px */
+	line-height: 1.4; /* 56px */
+}
+h2 {
+	font-size: 2em; /* 32px */
+	line-height: 1.5; /* 48px */
+}
+h3 {
+	font-size: 1.75em; /* 28px */
+	line-height: 1.5; /* 44px */
+}
+h4 {
+	font-size: 1.5em; /* 24px */
+	line-height: 1.6; /* 40px */
+}
+h5 {
+	font-size: 1.25em; /* 20px */
+	line-height: 1.8; /* 36px */
+}
+h6 {
+	font-size: 1em; /* 16px */
+	line-height: 1.87; /* 30px */
+}
+.display-1 { font-size: 6em; } /* 96px */
+.display-2 { font-size: 5.5em; } /* 88px */
+.display-3 { font-size: 4.5em; } /* 72px */
+.display-4 { font-size: 3.5em; } /* 56px */
+@include breakpoint-less(md) {
+	.display-1 { font-size: 5.5em; } /* 88px */
+	.display-2 { font-size: 5em; } /* 80px */
+	.display-3 { font-size: 4em; } /* 64px */
+	.display-4 { font-size: 3em; } /* 48px */
+}
+@include breakpoint-less(sm) {
+	.display-1 { font-size: 5em; } /* 80px */
+	.display-2 { font-size: 4.5em; } /* 72px */
+	.display-3 { font-size: 3.5em; } /* 56px */
+	.display-4 { font-size: 3em; } /* 48px */
+}
+
+p {
+	margin: 0;
+	font-size: 0.9375em; /* 15px */
+	line-height: 1.86; /* 28px */
+}
+.font-extra-small {
+	font-size: 0.8125em; /* 13px */
+	line-height: 1.6; /* 20px */
+}
+.font-small {
+	font-size: 0.875em; /* 14px */
+	line-height: 1.72; /* 24px */
+}
+.font-large {
+	font-size: 1.063em; /* 17px */
+	line-height: 1.75; /* 29.75px */
+}
+
+.uppercase {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+//
+// Font Icons //
+//
+i {
+	display: inline-block;
+}
+.icon-5xl { i { font-size: 2.5em; } /* 40px */ }
+.icon-4xl { i { font-size: 2.25em; } /* 36px */ }
+.icon-3xl { i { font-size: 2em; } /* 32px */ }
+.icon-2xl { i { font-size: 1.75em; } /* 28px */ }
+.icon-xl { i { font-size: 1.5em; } /* 24px */ }
+.icon-lg { i { font-size: 1.25em; } /* 20px */ }
+.icon-sm { i { font-size: 0.875em; } /* 14px */ }

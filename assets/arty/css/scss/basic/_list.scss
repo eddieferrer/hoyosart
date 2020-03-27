@@ -1,0 +1,99 @@
+//
+// List styles //
+//
+ol {
+	margin: 0 0 -7px;
+	li {
+		margin: 0 0 7px;
+	}
+}
+ul {
+	margin: 0 0 -7px;
+	li {
+		margin: 0 0 7px;
+		ul, ol {
+			margin-top: 7px;
+		}
+		a {
+			@include transition(linear 0.1s);
+		}
+	}
+	&[class*=' list-'], &[class^='list-'] {
+		padding: 0;
+	}
+	&.list-unstyled, 
+	&.list-dash {
+		li {
+			list-style-type: none;
+		}
+	}
+	&.list-dash {
+		li {
+			&:before {
+				content: '-';
+				padding-right: 7px;
+			}
+			a {
+				&:hover {
+					padding-left: 2px;
+				}
+			}
+			ul, ol {
+				padding-left: 40px;
+			}
+		}
+	}
+	//
+	// Horizontal List //
+	//
+	&[class*=' list-inline'], &[class^='list-inline'] {
+		li {
+			display: inline-block;
+		}
+	}
+	&.list-inline {
+		margin-right: -7px;
+		margin-left: -7px;
+		li {
+			padding: 0 7px;
+		}
+	}
+	&.list-inline-sm {
+		margin-right: -3px;
+		margin-left: -3px;
+		li { 
+			padding: 0 3px;
+		}
+	}
+	&.list-inline-lg {
+		margin-right: -14px;
+		margin-left: -14px;
+		li { 
+			padding: 0 14px;
+		}
+	}
+	&.list-inline-dash {
+		li { &:after { content: '-'; } }
+	}
+	&.list-inline-slash {
+		li { &:after { content: '/'; } }
+	}
+	&.list-inline-vbar {
+		li { &:after { content: '|'; } }
+	}
+	&.list-inline-dash, 
+	&.list-inline-slash, 
+	&.list-inline-vbar {
+		li {
+			&:after {
+				padding: 0 3px 0 6px;
+			}
+			&:last-child {
+				&:after {
+					content: '';
+					padding: 0;
+				}
+			}
+		}
+	}
+}

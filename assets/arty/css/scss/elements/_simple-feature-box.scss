@@ -1,0 +1,153 @@
+//
+// Simple Feature box //
+//
+.sf-box {
+	@include display-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	min-height: 50px;
+	padding-left: 76px;
+	.sf-box-icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0.9;
+		background: $button-gray;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		text-align: center;
+		@include transition(ease-out 0.2s);
+		* {
+			margin: 0;
+			line-height: 50px;
+			vertical-align: middle;
+			color: $color-dark-09;
+			@include transition(ease-out 0.2s);
+		}
+		a {
+			display: block;
+		}
+		//
+		// Positions //
+		//
+		&.middle {
+			top: 50%;
+			@include transform(translateY(-50%));
+		}
+	}
+	&:hover {
+		.sf-box-icon {
+			opacity: 1;
+		}
+	}
+	//
+	// Sizes //
+	//
+	&.sf-box-xs {
+		min-height: 32px;
+		padding-left: 56px;
+		.sf-box-icon {
+			width: 32px;
+			height: 32px;
+			* {
+				line-height: 32px;
+			}
+		}
+	}
+	&.sf-box-sm {
+		min-height: 40px;
+		padding-left: 64px;
+		.sf-box-icon {
+			width: 40px;
+			height: 40px;
+			* {
+				line-height: 40px;
+			}
+		}
+	}
+	&.sf-box-lg {
+		min-height: 60px;
+		padding-left: 86px;
+		.sf-box-icon {
+			width: 60px;
+			height: 60px;
+			* {
+				line-height: 60px;
+			}
+		}
+	}
+	&.sf-box-xl {
+		min-height: 70px;
+		padding-left: 96px;
+		.sf-box-icon {
+			width: 70px;
+			height: 70px;
+			* {
+				line-height: 70px;
+			}
+		}
+	}
+	//
+	// Colors //
+	//
+	&.dark {
+		.sf-box-icon {
+			background: $bg-dark;
+			* {
+				color: $color-white-09;
+			}
+		}
+	}
+	&.white {
+		.sf-box-icon {
+			background: $color-white;
+		}
+	}
+	&.outline-gray {
+		opacity: 1;
+		.sf-box-icon {
+			background: transparent;
+			border: 1px solid $button-gray;
+		}
+		&:hover {
+			.sf-box-icon {
+				background: $button-gray;
+			}
+		}
+	}
+	&.outline-dark {
+		opacity: 1;
+		.sf-box-icon {
+			background: transparent;
+			border: 1px solid $color-dark-08;
+		}
+		&:hover {
+			.sf-box-icon {
+				background: $color-dark;
+				* {
+					color: $color-white;
+				}
+			}
+		}
+	}
+	&.outline-white {
+		opacity: 1;
+		.sf-box-icon {
+			background: transparent;
+			border: 1px solid $color-white-09;
+			* {
+				color: $color-white-09;
+			}
+		}
+		&:hover {
+			.sf-box-icon {
+				background: $color-white;
+				* {
+					color: $color-dark;
+				}
+			}
+		}
+	}
+}

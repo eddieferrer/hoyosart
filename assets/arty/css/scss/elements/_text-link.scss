@@ -1,0 +1,155 @@
+//
+// Text links //
+//
+*[class^='text-link-'], *[class*=' text-link-'] {
+	color: $color-dark-09;
+	&:hover, &:focus {
+		color: $color-dark-09;
+	}
+}
+.text-link-1 {
+	&:hover { text-decoration: underline; }
+}
+.text-link-2 {
+	&:hover { text-decoration: line-through; }
+}
+.text-link-3, 
+.text-link-4 {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		background: $color-dark-09;
+		width: 0;
+		height: 1px;
+		@include transition(ease-out 0.2s);
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+	}
+}
+.text-link-3 {
+	&:before { left: 0; }
+}
+.text-link-4 {
+	&:before { right: 0; }
+}
+.text-link-5 {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		@include transform(translateY(3px));
+		opacity: 0;
+		background: $color-dark-09;
+		width: 100%;
+		height: 1px;
+		@include transition(ease-out 0.2s);
+	}
+	&:hover {
+		&:before {
+			@include transform(translateY(0));
+			opacity: 1;
+		}
+	}
+}
+.text-link-6, 
+.text-link-7 {
+	position: relative;
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		height: 1px;
+		@include transition(ease-out 0.2s);
+	}
+	&:before {
+		left: 0;
+		background: $color-dark-02;
+		width: 100%;
+	}
+	&:after {
+		background: $color-dark-09;
+		width: 0;
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+}
+.text-link-6 {
+	&:after { left: 0; }
+}
+.text-link-7 {
+	&:after { right: 0; }
+}
+.text-link-8 {
+	position: relative;
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		@include transition(ease-out 0.2s);
+	}
+	&:before {
+		background: $color-dark-02;
+	}
+	&:after {
+		opacity: 0;
+		@include transform(translateY(3px));
+		background: $color-dark-09;
+	}
+	&:hover {
+		&:before {
+			opacity: 0;
+		}
+		&:after {
+			@include transform(translateY(0));
+			opacity: 1;
+		}
+	}
+}
+.text-link-9 {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 40%;
+		left: 0;
+		background: $color-dark-02;
+		width: 0;
+		height: 6px;
+		@include transition(ease-out 0.2s);
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+	}
+}
+
+div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black, .fm-wrapper:not(div[class^='bg-white'], div[class*=' bg-white'], .bg-light-gray, .bg-gray) {
+	*[class^='text-link-'], *[class*=' text-link-'] {
+		color: $color-white;
+		&:hover, &:focus { color: $color-white; }
+	}
+	.text-link-3, .text-link-4, .text-link-5 {
+		&:before { background: $color-white; }
+	}
+	.text-link-6, .text-link-7, .text-link-8 {
+		&:before { background: $color-white-03; }
+		&:after { background: $color-white; }
+	}
+	.text-link-9 {
+		&:before { background: $color-white-04; }
+	}
+}

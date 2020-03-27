@@ -1,0 +1,58 @@
+//
+// Feature box //
+//
+.f-box {
+	&.style-1 {
+		border: 1px solid $color-dark-02;
+		padding: 50px 40px;
+		@include transition(ease-out 0.2s);
+		.f-box-icon {
+			margin-bottom: 20px;
+			font-size: 40px;
+			color: $color-dark;
+		}
+		&:hover {
+			border-color: $color-dark;
+		}
+	}
+	&.style-2 {
+		border: 1px solid $color-dark-02;
+		padding: 40px 30px;
+		@include transition(ease-out 0.2s);
+		.f-box-icon {
+			margin-bottom: 20px;
+			font-size: 36px;
+			color: $color-dark;
+			@include transition(ease-out 0.2s);
+		}
+		h1,h2,h3,h4,h5,h6 {
+			@include transition(ease-out 0.2s);
+		}
+		&:hover {
+			background: $bg-light-gray;
+			border-color: transparent;
+		}
+	}
+}
+div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black {
+	.f-box {
+		&.style-1, &.style-2 {
+			border-color: $color-white-02;
+		}
+		&.style-1 {
+			.f-box-icon {
+				color: $color-white;
+			}
+			&:hover { border-color: $color-white; }
+		}
+		&.style-2 {
+			.f-box-icon {
+				color: $color-white;
+			}
+			&:hover {
+				background: $color-white-01;
+				border-color: transparent;
+			}
+		}
+	}
+}

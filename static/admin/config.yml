@@ -9,10 +9,10 @@ media_library:
     api_key: 712995591669847
     output_filename_only: true
 collections:
-  - name: 'sections'
-    label: 'Sections'
+  - name: 'section'
+    label: 'section'
     format: 'json'
-    folder: 'assets/content/sections'
+    folder: 'assets/content/section'
     create: true
     slug: '{{slug}}'
     editor:
@@ -34,10 +34,11 @@ collections:
       - { label: 'Width', name: 'width', widget: 'string' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: "Gallery",
-          name: "gallery",
-          widget: "select",
+      - { label: 'Date (used for order)', name: 'date', widget: 'datetime'}
+      - { label: 'Gallery',
+          name: 'gallery',
+          widget: 'select',
           multiple: true,
-          options: ["Abstracts", "Figurative Abstract", "Contemporary", "Surreal"]
+          options: ['Abstracts', 'Figurative Abstract', 'Contemporary', 'Surreal']
         }
 

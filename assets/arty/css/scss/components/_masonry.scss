@@ -1,0 +1,134 @@
+//
+// Masonry styles //
+//
+.masonry {
+	width: auto;
+	margin: 0 -15px -30px;
+	.masonry-item {
+		margin: 0 0 30px;
+		padding: 0 15px;
+	}
+	//
+	// Masonry - Columns //
+	//
+	&.column-1 {
+		.masonry-item { width: 100%; }
+	}
+	&.column-2 {
+		@include breakpoint-above(md) {
+			.masonry-item { width: 50%; }
+		}
+	}
+	&.column-3 {
+		@include breakpoint-above(md) {
+			.masonry-item { width: 50%; }
+		}
+		@include breakpoint-above(lg) {
+			.masonry-item { width: 33.33%; }
+		}
+	}
+	&.column-4 {
+		@include breakpoint-above(sm) {
+			.masonry-item { width: 50%; }
+		}
+		@include breakpoint-above(md) {
+			.masonry-item { width: 33.33%; }
+		}
+		@include breakpoint-above(lg) {
+			.masonry-item { width: 25%; }
+		}
+	}
+	&.column-5 {
+		@extend .column-4;
+		@include breakpoint-above(xl) {
+			.masonry-item { width: 20%; }
+		}
+	}
+	&.column-6 {
+		@extend .column-4;
+		@include breakpoint-above(xl) {
+			.masonry-item { width: 16.66%; }
+		}
+	}
+	//
+	// Masonry - Item Spacings //
+	//
+	&.spacing-0 {
+		margin: 0;
+		.masonry-item {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	&.spacing-6 {
+		margin: 0 -3px -6px;
+		.masonry-item {
+			margin-bottom: 6px;
+			padding: 0 3px;
+		}
+	}
+	&.spacing-10 {
+		margin: 0 -5px -10px;
+		.masonry-item {
+			margin-bottom: 10px;
+			padding: 0 5px;
+		}
+	}
+	&.spacing-20 {
+		margin: 0 -10px -20px;
+		.masonry-item {
+			margin-bottom: 20px;
+			padding: 0 10px;
+		}
+	}
+}
+.container-fluid {
+	.masonry {
+		&.spacing-0 {
+			margin-right: -30px;
+			margin-left: -30px;
+		}
+		&.spacing-6 {
+			margin-right: -27px;
+			margin-left: -27px;
+		}
+		&.spacing-10 {
+			margin-right: -25px;
+			margin-left: -25px;
+		}
+		&.spacing-20 {
+			margin-right: -20px;
+			margin-left: -20px;
+		}
+	}
+}
+@include breakpoint-above(lg) {
+	.masonry {
+		&.spacing-40 {
+			margin: 0 -20px -40px;
+			.masonry-item {
+				margin-bottom: 40px;
+				padding: 0 20px;
+			}
+		}
+		&.spacing-50 {
+			margin: 0 -25px -50px;
+			.masonry-item {
+				margin-bottom: 50px;
+				padding: 0 25px;
+			}
+		}
+	}
+	.container-fluid {
+		.masonry {
+			&.spacing-40 {
+				margin-right: -10px;
+				margin-left: -10px;
+			}
+			&.spacing-50 {
+				margin-right: -5px;
+				margin-left: -5px;
+			}
+		}
+	}
+}

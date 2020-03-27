@@ -1,0 +1,49 @@
+//
+// Progress Bars //
+//
+.progress-box {
+	margin-bottom: 16px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	h1,h2,h3,h4,h5,h6 {
+		margin-bottom: 0;
+	}
+	.progress, 
+	.progress-bar {
+		height: 3px;
+		box-shadow: none;
+		border-radius: 10px;
+	}
+	.progress {
+		overflow: visible;
+		background: $color-dark-02;
+		margin: 0;
+		padding: 0;
+		.progress-bar {
+			overflow: visible;
+			position: relative;
+			background: $color-dark-09;
+			width: 30%;
+			border: none;
+			color: $color-dark-09;
+			span {
+				position: absolute;
+				top: -25px;
+				right: 0;
+				font-size: 14px;
+			}
+		}
+	}
+}
+div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black {
+	.progress-box {
+		.progress {
+			background: $color-white-03;
+			.progress-bar {
+				background: $color-white;
+				color: $color-white;
+			}
+		}
+	}
+}
