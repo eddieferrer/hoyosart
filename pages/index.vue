@@ -41,7 +41,10 @@
                   <span class="d-block margin-bottom-10"
                     >{{ artwork.medium }} - {{ artwork.height }}x{{
                       artwork.width
-                    }}</span
+                    }}
+                    <span v-if="artwork.numberOfFrames != 1"
+                      >({{ artwork.numberOfFrames }})</span
+                    ></span
                   >
                 </div>
               </div>
