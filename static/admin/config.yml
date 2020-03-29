@@ -10,7 +10,7 @@ media_library:
     output_filename_only: true
 collections:
   - name: 'section'
-    label: 'section'
+    label: 'Sections'
     format: 'json'
     folder: 'assets/content/section'
     create: true
