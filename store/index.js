@@ -26,16 +26,16 @@ export const actions = {
     })
     await commit('setSections', sections)
 
-    const images = await require.context(
-      '~/assets/content/artwork/',
-      false,
-      /\.json$/
-    )
-    const artwork = images.keys().map((key) => {
-      const res = images(key)
-      res.slug = key.slice(2, -5)
-      return res
-    })
-    await commit('setArtwork', artwork)
+    // const images = await require.context(
+    //   '~/assets/content/artwork/',
+    //   false,
+    //   /\.json$/
+    // )
+    // const artwork = images.keys().map((key) => {
+    //   const res = images(key)
+    //   res.slug = key.slice(2, -5)
+    //   return res
+    // })
+    // await commit('setArtwork', artwork)
   }
 }
