@@ -614,7 +614,9 @@ $(function() {
           enabled: true
         },
         image: {
-          titleSrc: 'data-gallery-title'
+          titleSrc: function(item) {
+            return item.el.attr('data-gallery-title') + '<small>by Marsel Van Oosten</small>' + '<small>by Marsel Van Oosten</small>';
+          }
         }
       })
     })

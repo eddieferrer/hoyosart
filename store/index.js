@@ -12,6 +12,12 @@ export const mutations = {
   }
 }
 
+export const getters = {
+  getHomeArtwork(state) {
+    return state.artwork.filter((artwork) => artwork.gallery.includes('Home'))
+  }
+}
+
 export const actions = {
   async nuxtServerInit({ commit }) {
     const files = await require.context(
