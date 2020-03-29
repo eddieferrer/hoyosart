@@ -39,6 +39,6 @@ collections:
           name: 'gallery',
           widget: 'select',
           multiple: true,
-          options: ['Abstracts', 'Figurative Abstract', 'Contemporary', 'Surreal']
+          options: ['Home', 'Abstracts', 'Figurative Abstract', 'Contemporary', 'Surreal']
         }
 
