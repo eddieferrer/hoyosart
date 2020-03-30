@@ -32,15 +32,15 @@
                 <div class="portfolio-img">
                   <a
                     :href="
-                      'https://res.cloudinary.com/hoyosartimagecloud/image/upload/c_fit,h_600,w_600/v1585526865' +
-                        artwork.image
+                      'https://res.cloudinary.com/hoyosartimagecloud/image/upload/c_fit,h_600,w_600/v1585526865/' +
+                        artwork.imageFilename
                     "
                     :data-gallery-title="artwork.title"
                   >
                     <img
                       :src="
-                        'https://res.cloudinary.com/hoyosartimagecloud/image/upload/c_fit,h_600,w_600/v1585526865' +
-                          artwork.image
+                        'https://res.cloudinary.com/hoyosartimagecloud/image/upload/c_fit,h_600,w_600/v1585526865/' +
+                          artwork.imageFilename
                       "
                       alt=""
                     />
@@ -106,3 +106,4 @@ export default {
   }
 }
 </script>
+<style scoped lang="scss"></style>

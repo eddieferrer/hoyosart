@@ -51,6 +51,7 @@ export const actions = {
       'setArtwork',
       artwork.map((element) => {
         element.imageFilename = element.image.split('/').pop()
+        return element
       })
     )
   }
