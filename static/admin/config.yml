@@ -3,7 +3,7 @@ backend:
   branch: master
 media_library:
   name: cloudinary
-  output_filename_only: true
+  output_filename_only: false
   config:
     cloud_name: hoyosartimagecloud
     api_key: 712995591669847

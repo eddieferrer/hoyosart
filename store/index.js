@@ -46,6 +46,12 @@ export const actions = {
       res.slug = key.slice(2, -5)
       return res
     })
-    await commit('setArtwork', artwork)
+    // add image url only and then commit
+    await commit(
+      'setArtwork',
+      artwork.map((element) => {
+        element.imageFilename = element.image.split('/').pop()
+      })
+    )
   }
 }
