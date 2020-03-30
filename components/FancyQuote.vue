@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="testimonial-quote group right"
-    style="width: 600px; margin-right: auto;"
-  >
+  <div class="testimonial-quote group" style="margin-right: auto;">
     <div class="quote-container">
       <div>
         <blockquote>
@@ -112,20 +109,6 @@ export default {
 }
 
 .testimonial-quote .quote-container {
-  padding-left: 160px;
-}
-
-.testimonial-quote.right .quote-container {
-  padding-left: 0;
-  padding-right: 160px;
-}
-
-.testimonial-quote.right img {
-  left: auto;
-  right: 0;
-}
-
-.testimonial-quote.right cite {
-  text-align: right;
+  padding-left: 0px;
 }
 </style>

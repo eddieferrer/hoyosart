@@ -51,7 +51,7 @@
 	//
 	// Portfolio box spacings //
 	//
-	&.spacing-0 { 
+	&.spacing-0 {
 		.portfolio-item { padding: 0; }
 	}
 	&.spacing-6 {
@@ -252,8 +252,8 @@ div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black {
 			}
 		}
 	}
-	&.hover-style-2, 
-	&.hover-style-3, 
+	&.hover-style-2,
+	&.hover-style-3,
 	&.hover-style-4 {
 		.portfolio-item {
 			a {
@@ -402,7 +402,8 @@ div[class^='bg-dark'], div[class*=' bg-dark'], .bg-black {
 		}
 		.portfolio-title {
 			padding: 24px 30px;
-			h1,h2,h3,h4,h5,h6 { line-height: 1.3 }
+      h1,h2,h3,h4,h5,h6 { line-height: 1.3 }
+      .title {color: #767A7D;}
 		}
 	}
 	&.hover-style-2 {

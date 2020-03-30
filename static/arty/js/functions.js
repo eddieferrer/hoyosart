@@ -597,30 +597,30 @@ $(function() {
   /* ===============================================
     Justified Gallery
   =============================================== */
-  const justifiedGallery = $('.justified-gallery')
+  // const justifiedGallery = $('.justified-gallery')
 
-  if (justifiedGallery.length) {
-    justifiedGallery.justifiedGallery({
-      rowHeight: 340,
-      margins: 10
-    })
-    justifiedGallery.each(function() {
-      $(this).magnificPopup({
-        delegate: 'a',
-        removalDelay: '200',
-        type: 'image',
-        fixedContentPos: false,
-        gallery: {
-          enabled: true
-        },
-        image: {
-          titleSrc: function(item) {
-            return item.el.attr('data-gallery-title') + '<small>by Marsel Van Oosten</small>' + '<small>by Marsel Van Oosten</small>';
-          }
-        }
-      })
-    })
-  }
+  // if (justifiedGallery.length) {
+  //   justifiedGallery.justifiedGallery({
+  //     rowHeight: 340,
+  //     margins: 10
+  //   })
+  //   justifiedGallery.each(function() {
+  //     $(this).magnificPopup({
+  //       delegate: 'a',
+  //       removalDelay: '200',
+  //       type: 'image',
+  //       fixedContentPos: false,
+  //       gallery: {
+  //         enabled: true
+  //       },
+  //       image: {
+  //         titleSrc: function(item) {
+  //           return item.el.attr('data-gallery-title');
+  //         }
+  //       }
+  //     })
+  //   })
+  // }
 
   /* ===============================================
     MixItUp
@@ -655,46 +655,46 @@ $(function() {
   //
   // Lightbox - Image //
   //
-  $('.lightbox-image-link, .lightbox-image-box').each(function() {
-    $(this).magnificPopup({
-      type: 'image',
-      fixedContentPos: false,
-      removalDelay: 200,
-      closeOnContentClick: true,
-      image: {
-        titleSrc: 'data-image-title'
-      }
-    })
-  })
+  // $('.lightbox-image-link, .lightbox-image-box').each(function() {
+  //   $(this).magnificPopup({
+  //     type: 'image',
+  //     fixedContentPos: false,
+  //     removalDelay: 200,
+  //     closeOnContentClick: true,
+  //     image: {
+  //       titleSrc: 'data-image-title'
+  //     }
+  //   })
+  // })
 
   //
   // Lightbox - Media //
   //
-  $('.lightbox-media-link, .lightbox-media-box').each(function() {
-    const lightboxMedia = $(this)
+  // $('.lightbox-media-link, .lightbox-media-box').each(function() {
+  //   const lightboxMedia = $(this)
 
-    lightboxMedia.magnificPopup({
-      type: 'iframe',
-      fixedContentPos: false,
-      removalDelay: 200,
-      preloader: false,
-      iframe: {
-        patterns: {
-          youtube: {
-            index: 'youtube.com/',
-            id: 'v=',
-            src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0'
-          },
-          vimeo: {
-            index: 'vimeo.com/',
-            id: '/',
-            src: '//player.vimeo.com/video/%id%?autoplay=1'
-          }
-        },
-        srcAction: 'iframe_src'
-      }
-    })
-  })
+  //   lightboxMedia.magnificPopup({
+  //     type: 'iframe',
+  //     fixedContentPos: false,
+  //     removalDelay: 200,
+  //     preloader: false,
+  //     iframe: {
+  //       patterns: {
+  //         youtube: {
+  //           index: 'youtube.com/',
+  //           id: 'v=',
+  //           src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0'
+  //         },
+  //         vimeo: {
+  //           index: 'vimeo.com/',
+  //           id: '/',
+  //           src: '//player.vimeo.com/video/%id%?autoplay=1'
+  //         }
+  //       },
+  //       srcAction: 'iframe_src'
+  //     }
+  //   })
+  // })
 
   //
   // Lightbox - Gallery //
@@ -703,8 +703,7 @@ $(function() {
 
   if ($gallery.length) {
     $gallery.each(function() {
-      $(this).magnificPopup({
-        delegate: 'a',
+      $(this).find('a').magnificPopup({
         removalDelay: '200',
         type: 'image',
         fixedContentPos: false,

@@ -7,7 +7,7 @@
       <div class="section padding-y-30">
         <div class="container">
           <div
-            class="gallery portfolio-masonry portfolio-title-outside hover-style-3 column-2 spacing-50"
+            class="gallery portfolio-masonry portfolio-title-outside hover-style-3 column-3 spacing-30"
           >
             <template v-for="(artwork, index) in getHomeArtwork">
               <template v-if="index == 1">
@@ -35,8 +35,8 @@
                   </a>
                 </div>
                 <div class="portfolio-title">
-                  <h4 class="font-weight-medium">
-                    <a href="#">{{ artwork.title }}</a>
+                  <h4 class="font-weight-medium title">
+                    {{ artwork.title }}
                   </h4>
                   <span class="d-block margin-bottom-10"
                     >{{ artwork.medium }} - {{ artwork.height }}x{{

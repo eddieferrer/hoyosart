@@ -8,7 +8,11 @@ export const mutations = {
     state.sections = list
   },
   setArtwork(state, list) {
-    state.artwork = list
+    state.artwork = list.sort(function(a, b) {
+      a = new Date(a.date)
+      b = new Date(b.date)
+      return a > b ? -1 : a < b ? 1 : 0
+    })
   }
 }
 

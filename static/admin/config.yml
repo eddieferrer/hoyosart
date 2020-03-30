@@ -4,10 +4,10 @@ backend:
 public_folder: /img
 media_library:
   name: cloudinary
+  output_filename_only: true
   config:
     cloud_name: hoyosartimagecloud
     api_key: 712995591669847
-    output_filename_only: true
 collections:
   - name: 'section'
     label: 'Sections'
