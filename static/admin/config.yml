@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: master
-public_folder: /img
+public_folder: /
 media_library:
   name: cloudinary
   output_filename_only: true

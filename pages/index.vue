@@ -30,8 +30,20 @@
               </template>
               <div :key="index" class="portfolio-item">
                 <div class="portfolio-img">
-                  <a :href="artwork.image" :data-gallery-title="artwork.title">
-                    <img :src="artwork.image" alt="" />
+                  <a
+                    :href="
+                      'https://res.cloudinary.com/hoyosartimagecloud/image/upload/c_fit,h_600,w_600/v1585526865' +
+                        artwork.image
+                    "
+                    :data-gallery-title="artwork.title"
+                  >
+                    <img
+                      :src="
+                        'https://res.cloudinary.com/hoyosartimagecloud/image/upload/c_fit,h_600,w_600/v1585526865' +
+                          artwork.image
+                      "
+                      alt=""
+                    />
                   </a>
                 </div>
                 <div class="portfolio-title">
