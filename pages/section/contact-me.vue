@@ -19,6 +19,7 @@
                   data-netlify-honeypot="bot-field"
                   action="/section/success"
                 >
+                  <input type="hidden" name="form-name" value="contact" />
                   <div class="form-row">
                     <div class="col-12 col-sm-6">
                       <input
