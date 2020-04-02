@@ -7,24 +7,6 @@
           class="gallery portfolio-masonry portfolio-title-outside hover-style-3 column-3 spacing-30"
         >
           <template v-for="(artwork, index) in activeArtwork">
-            <template v-if="index == 2">
-              <div :key="index" class="portfolio-item">
-                <FancyQuote
-                  quote="Hoyos' art is visceral. It comes from within. It explores her whole strength."
-                  author-title="Artist & Art Curator"
-                  author="Sandra María Monsalve"
-                />
-              </div>
-            </template>
-            <template v-if="index == 6">
-              <div :key="index" class="portfolio-item">
-                <FancyQuote
-                  quote="Hoyos’ has a keen eye, unquenchable curiosity and the desire to create works of incremental, seemingly endless possibilities."
-                  author-title="Artist & Art Critic"
-                  author="Carlos Zuares Dejesus"
-                />
-              </div>
-            </template>
             <div :key="index" class="portfolio-item">
               <div class="portfolio-img">
                 <a
@@ -66,11 +48,11 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import FancyQuote from '~/components/FancyQuote.vue'
+// import FancyQuote from '~/components/FancyQuote.vue'
 
 export default {
   components: {
-    FancyQuote
+    // FancyQuote
   },
   computed: {
     ...mapGetters([
