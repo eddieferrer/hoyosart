@@ -80,8 +80,8 @@
         <li class="sm-item">
           <a
             class="sm-link"
-            :class="{ active: activeRoute.section == 'contact' }"
-            href="/section/contact"
+            :class="{ active: activeRoute.section == 'contact-me' }"
+            href="/section/contact-me"
             >Contact</a
           >
         </li>

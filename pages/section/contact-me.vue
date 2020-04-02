@@ -17,7 +17,7 @@
                   data-netlify="true"
                   class="style-3"
                   data-netlify-honeypot="bot-field"
-                  action="/pages/success"
+                  action="/section/success"
                 >
                   <div class="form-row">
                     <div class="col-12 col-sm-6">
