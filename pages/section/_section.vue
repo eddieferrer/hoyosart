@@ -1,51 +1,64 @@
 <template>
-  <article>
-    <h1>{{ blogPost.title }}</h1>
-    <div>{{ blogPost.body }}</div>
-  </article>
+  <div class="wrapper">
+    <div class="section-lg padding-bottom-20">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row col-spacing-50">
+              <div class="col-12 col-lg-4 text-lg-right">
+                <h1 class="margin-0">
+                  {{ section.title }}
+                </h1>
+              </div>
+              <div class="col-12 col-lg-8">
+                <p class="font-large font-weight-light">
+                  It seems as though I have been painting my whole life. Being
+                  creative is a "need" for me. I am specially drawn to the
+                  freedom of having no boundaries of representation through my
+                  art. I play with my imagination and leave the brush free to
+                  explore the canvas without worrying about the end result.
+                  Influenced by feelings and passion, my own techniques have
+                  developed.
+                </p>
+                <p class="font-large font-weight-light">
+                  I dont look for results, I dont plan my abstractions, I just
+                  find it and give it a soul, they are analogies, simply that. I
+                  enter into a totally different world where I lose all fear,
+                  replaced with imagination and passion. The acrylic and
+                  graphite have given me strength and I have found myself.
+                </p>
+                <p class="font-large font-weight-light">
+                  Ana Maria Hoyos
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end container -->
+    </div>
+
+    <div class="section-xs bg-light-gray">
+      <div class="container text-center"></div>
+      <!-- end container -->
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   async asyncData({ params, payload }) {
-    if (payload) return { blogPost: payload }
+    if (payload) return { section: payload }
     else
       return {
-        blogPost: await require(`~/assets/content/section/${params.section}.json`)
+        section: await require(`~/assets/content/section/${params.section}.json`)
       }
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+<style lang="scss" scoped>
+p {
+  margin-bottom: 1rem;
 }
 </style>

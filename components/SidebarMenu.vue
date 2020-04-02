@@ -2,39 +2,88 @@
   <!-- Sidebar Menu -->
   <div class="sm-wrapper sm-left dark">
     <div class="top logo">
-      <h5 class="uppercase letter-spacing-2">
-        <a href="#" class="d-none d-lg-inline d-xl-inline">Ana Maria Hoyos</a>
-      </h5>
+      <h3 class="uppercase letter-spacing-2 d-none d-lg-inline d-xl-inline">
+        Ana Maria
+      </h3>
+      <h1 class="uppercase letter-spacing-2 d-none d-lg-inline d-xl-inline">
+        Hoyos
+      </h1>
     </div>
     <div class="middle">
       <ul class="sm">
-        <li class="sm-item"><a class="sm-link" href="#">Home</a></li>
-        <li class="sm-item"><a class="sm-link" href="#">About</a></li>
         <li class="sm-item">
-          <a class="sm-link active" href="#">Galleries</a>
+          <a class="sm-link" :class="{ active: !activeRoute }" href="/">Home</a>
+        </li>
+        <li class="sm-item">
+          <a
+            class="sm-link"
+            :class="{ active: activeRoute.section == 'about-me' }"
+            href="/section/about-me"
+            >About Me</a
+          >
+        </li>
+        <li class="sm-item">
+          <a class="sm-link" href="#">Galleries</a>
           <ul class="sm-dropdown show">
             <li class="sm-dropdown-item">
-              <a class="sm-dropdown-link" href="#">Figurative Abstracts</a>
+              <a
+                class="sm-dropdown-link"
+                :class="{
+                  active: activeRoute.gallery == 'figurative-abstracts'
+                }"
+                href="/gallery/figurative-abstracts"
+                >Figurative Abstracts</a
+              >
             </li>
             <li class="sm-dropdown-item">
-              <a class="sm-dropdown-link" href="#">Abstracts</a>
+              <a
+                class="sm-dropdown-link"
+                :class="{ active: activeRoute.gallery == 'abstracts' }"
+                href="/gallery/abstracts"
+                >Abstracts</a
+              >
             </li>
             <li class="sm-dropdown-item">
-              <a class="sm-dropdown-link" href="#">Contemporary</a>
+              <a
+                class="sm-dropdown-link"
+                :class="{ active: activeRoute.gallery == 'contemporary' }"
+                href="/gallery/contemporary"
+                >Contemporary</a
+              >
             </li>
             <li class="sm-dropdown-item">
-              <a class="sm-dropdown-link" href="#">Surreal</a>
+              <a
+                class="sm-dropdown-link"
+                :class="{ active: activeRoute.gallery == 'surreal' }"
+                href="/gallery/surreal"
+                >Surreal</a
+              >
             </li>
           </ul>
         </li>
         <li class="sm-item">
-          <a class="sm-link" href="#">Artist Biography</a>
+          <a
+            class="sm-link"
+            :class="{ active: activeRoute.section == 'artist-biography' }"
+            href="/section/artist-biography"
+            >Artist Biography</a
+          >
         </li>
         <li class="sm-item">
-          <a class="sm-link" href="#">Press</a>
+          <a
+            class="sm-link"
+            :class="{ active: activeRoute.section == 'press' }"
+            href="/section/press"
+            >Press</a
+          >
         </li>
         <li class="sm-item">
-          <a class="sm-link" href="#">Contact</a>
+          <a
+            class="sm-link"
+            :class="{ active: activeRoute.section == 'contact' }"
+            href="/section/contact"
+            >Contact</a
+          >
         </li>
       </ul>
     </div>
@@ -58,9 +107,22 @@
     </button>
   </div>
 </template>
+<script>
+export default {
+  computed: {
+    activeRoute() {
+      return this.$route.params
+    }
+  }
+}
+</script>
 <style lang="scss" scoped>
-h5 a {
+h3,
+h1 {
   color: #cb0e0e !important;
+}
+h1 {
+  line-height: 1.75rem;
 }
 .sm-item {
   border-bottom: 1px solid #242627;

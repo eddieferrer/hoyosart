@@ -3,9 +3,9 @@
   <div class="sm-mobile dark">
     <div class="container-fluid">
       <div class="sm-logo">
-        <h5 class="uppercase letter-spacing-2">
-          <a href="#">Ana Maria Hoyos</a>
-        </h5>
+        <h4 class="uppercase letter-spacing-2">
+          Ana Maria Hoyos
+        </h4>
       </div>
       <!-- Sideber Menu Toggle -->
       <button class="sm-toggle">
@@ -15,7 +15,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
-h5 a {
+h4 {
   color: #cb0e0e !important;
 }
 </style>

@@ -2,7 +2,6 @@
 $(function() {
   'use strict'
 
-  console.log("functions js")
   const htmlBody = $('html,body')
   const body = $('body')
 
