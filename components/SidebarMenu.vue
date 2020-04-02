@@ -86,8 +86,6 @@
           >
         </li>
       </ul>
-    </div>
-    <div class="bottom">
       <ul class="list-inline margin-bottom-10">
         <li>
           <a href="https://www.facebook.com/ana.m.hoyos.5"
@@ -101,6 +99,7 @@
         </li>
       </ul>
     </div>
+    <div class="bottom"></div>
     <!-- Close Button -->
     <button class="sm-close">
       <span></span>

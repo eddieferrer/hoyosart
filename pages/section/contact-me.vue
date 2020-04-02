@@ -5,12 +5,27 @@
         <div class="row">
           <div class="col-12">
             <div class="row col-spacing-50">
-              <div class="col-12 col-lg-4 text-lg-right">
+              <div class="col-12 col-lg-3 text-lg-right">
                 <h1 class="margin-0">
                   {{ section.title }}
                 </h1>
               </div>
-              <div class="col-12 col-lg-8">
+              <div class="col-12 col-lg-7">
+                <p class="font-large font-weight-light">
+                  You can reach me on
+                  <a
+                    class="button-text-1"
+                    href="https://www.facebook.com/ana.m.hoyos.5"
+                    >facebook</a
+                  >
+                  or
+                  <a
+                    class="button-text-1"
+                    href="https://www.instagram.com/amhoyos1955/"
+                    >instagram</a
+                  >. You can also fill out the form below and I will get back to
+                  you as soon as possible.
+                </p>
                 <form
                   name="contact"
                   method="POST"
@@ -98,6 +113,6 @@ export default {
 
 <style lang="scss" scoped>
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 </style>

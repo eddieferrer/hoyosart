@@ -5,12 +5,12 @@
         <div class="row">
           <div class="col-12">
             <div class="row col-spacing-50">
-              <div class="col-12 col-lg-4 text-lg-right">
+              <div class="col-12 col-lg-3 text-lg-right">
                 <h1 class="margin-0">
                   {{ section.title }}
                 </h1>
               </div>
-              <div class="col-12 col-lg-8">
+              <div class="col-12 col-lg-7">
                 <p class="font-large font-weight-light">
                   It seems as though I have been painting my whole life. Being
                   creative is a "need" for me. I am specially drawn to the
@@ -28,7 +28,7 @@
                   graphite have given me strength and I have found myself.
                 </p>
                 <p class="font-large">
-                  Ana Maria Hoyos
+                  <strong>Ana Maria Hoyos</strong>
                 </p>
                 <img
                   src="@/assets/images/name-signature.png"

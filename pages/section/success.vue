@@ -10,7 +10,7 @@
                   Thank you
                 </h1>
               </div>
-              <div class="col-12 col-lg-8">
+              <div class="col-12 col-lg-7">
                 <p class="font-large font-weight-light">
                   Thank you for contacting me. I wil get back to you as soon as
                   possible.

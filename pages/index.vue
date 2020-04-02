@@ -7,7 +7,7 @@
           class="gallery portfolio-masonry portfolio-title-outside hover-style-3 column-3 spacing-30"
         >
           <template v-for="(artwork, index) in getHomeArtwork">
-            <template v-if="index == 1">
+            <template v-if="index == 2">
               <div :key="index" class="portfolio-item">
                 <FancyQuote
                   quote="Hoyos' art is visceral. It comes from within. It explores her whole strength."

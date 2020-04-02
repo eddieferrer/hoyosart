@@ -5,12 +5,12 @@
         <div class="row">
           <div class="col-12">
             <div class="row col-spacing-50">
-              <div class="col-12 col-lg-4 text-lg-right">
+              <div class="col-12 col-lg-3 text-lg-right">
                 <h1 class="margin-0">
                   {{ section.title }}
                 </h1>
               </div>
-              <div class="col-12 col-lg-8">
+              <div class="col-12 col-lg-7">
                 <h5 class="font-weight-normal">Essays</h5>
                 <p class="font-large font-weight-light">
                   <a

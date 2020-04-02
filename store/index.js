@@ -19,6 +19,26 @@ export const mutations = {
 export const getters = {
   getHomeArtwork(state) {
     return state.artwork.filter((artwork) => artwork.gallery.includes('Home'))
+  },
+  getFigurativeAbstractArtwork(state) {
+    return state.artwork.filter((artwork) =>
+      artwork.gallery.includes('Figurative Abstract')
+    )
+  },
+  getAbstractsArtwork(state) {
+    return state.artwork.filter((artwork) =>
+      artwork.gallery.includes('Abstracts')
+    )
+  },
+  getContemporaryArtwork(state) {
+    return state.artwork.filter((artwork) =>
+      artwork.gallery.includes('Contemporary')
+    )
+  },
+  getSurrealArtwork(state) {
+    return state.artwork.filter((artwork) =>
+      artwork.gallery.includes('Surreal')
+    )
   }
 }
 
