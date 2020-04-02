@@ -27,9 +27,14 @@
                   replaced with imagination and passion. The acrylic and
                   graphite have given me strength and I have found myself.
                 </p>
-                <p class="font-large font-weight-light">
+                <p class="font-large">
                   Ana Maria Hoyos
                 </p>
+                <img
+                  src="@/assets/images/name-signature.png"
+                  alt=""
+                  style="width: 140px; float: left;"
+                />
               </div>
             </div>
           </div>
@@ -51,7 +56,7 @@ export default {
     if (payload) return { section: payload }
     else
       return {
-        section: await require(`~/assets/content/section/${params.section}.json`)
+        section: await require(`~/assets/content/section/about-me.json`)
       }
   }
 }
