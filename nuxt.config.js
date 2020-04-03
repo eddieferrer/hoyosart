@@ -67,5 +67,12 @@ export default {
      */
     extend(config, ctx) {}
   },
-  generate: {}
+  generate: {
+    routes: [
+      '/gallery/figurative-abstracts',
+      '/gallery/abstracts',
+      '/gallery/contemporary',
+      '/gallery/surreal'
+    ]
+  }
 }
