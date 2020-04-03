@@ -8,17 +8,6 @@ media_library:
     cloud_name: hoyosartimagecloud
     api_key: 712995591669847
 collections:
-  - name: 'section'
-    label: 'Sections'
-    format: 'json'
-    folder: 'assets/content/section'
-    create: true
-    slug: '{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'artwork'
     label: 'Artwork'
     format: 'json'
