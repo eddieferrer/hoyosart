@@ -26,15 +26,7 @@
 </template>
 
 <script>
-export default {
-  async asyncData({ params, payload }) {
-    if (payload) return { section: payload }
-    else
-      return {
-        section: await require(`~/assets/content/section/about-me.json`)
-      }
-  }
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>

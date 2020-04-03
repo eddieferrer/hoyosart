@@ -7,7 +7,7 @@
             <div class="row col-spacing-50">
               <div class="col-12 col-lg-3 text-lg-right">
                 <h1 class="margin-0">
-                  {{ section.title }}
+                  Press
                 </h1>
               </div>
               <div class="col-12 col-lg-7">
@@ -65,15 +65,7 @@
 </template>
 
 <script>
-export default {
-  async asyncData({ params, payload }) {
-    if (payload) return { section: payload }
-    else
-      return {
-        section: await require(`~/assets/content/section/press.json`)
-      }
-  }
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
