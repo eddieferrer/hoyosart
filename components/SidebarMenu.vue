@@ -17,7 +17,7 @@
         <li class="sm-item">
           <a
             class="sm-link"
-            :class="{ active: activeRoute.section == 'about-me' }"
+            :class="{ active: activeRoute.path.includes('about-me') }"
             href="/section/about-me"
             >About Me</a
           >
@@ -64,7 +64,7 @@
         <li class="sm-item">
           <a
             class="sm-link"
-            :class="{ active: activeRoute.section == 'artist-biography' }"
+            :class="{ active: activeRoute.path.includes('artist-biography') }"
             href="/section/artist-biography"
             >Artist Biography</a
           >
@@ -72,7 +72,7 @@
         <li class="sm-item">
           <a
             class="sm-link"
-            :class="{ active: activeRoute.section == 'press' }"
+            :class="{ active: activeRoute.path.includes('press') }"
             href="/section/press"
             >Press</a
           >
@@ -80,7 +80,7 @@
         <li class="sm-item">
           <a
             class="sm-link"
-            :class="{ active: activeRoute.section == 'contact-me' }"
+            :class="{ active: activeRoute.path.includes('contact-me') }"
             href="/section/contact-me"
             >Contact</a
           >
@@ -110,7 +110,7 @@
 export default {
   computed: {
     activeRoute() {
-      return this.$route.params
+      return this.$route
     }
   }
 }
