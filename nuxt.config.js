@@ -67,16 +67,5 @@ export default {
      */
     extend(config, ctx) {}
   },
-  generate: {
-    routes() {
-      const fs = require('fs')
-      const path = require('path')
-      return fs.readdirSync('./assets/content/section').map((file) => {
-        return {
-          route: `/section/${path.parse(file).name}`, // Return the slug
-          payload: require(`./assets/content/section/${file}`)
-        }
-      })
-    }
-  }
+  generate: {}
 }
