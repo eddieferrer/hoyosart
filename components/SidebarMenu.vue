@@ -29,7 +29,7 @@
               <a
                 class="sm-dropdown-link"
                 :class="{
-                  active: activeRoute.gallery == 'figurative-abstracts'
+                  active: activeRoute.params.gallery == 'figurative-abstracts'
                 }"
                 href="/gallery/figurative-abstracts"
                 >Figurative Abstracts</a
@@ -38,7 +38,7 @@
             <li class="sm-dropdown-item">
               <a
                 class="sm-dropdown-link"
-                :class="{ active: activeRoute.gallery == 'abstracts' }"
+                :class="{ active: activeRoute.params.gallery == 'abstracts' }"
                 href="/gallery/abstracts"
                 >Abstracts</a
               >
@@ -46,7 +46,9 @@
             <li class="sm-dropdown-item">
               <a
                 class="sm-dropdown-link"
-                :class="{ active: activeRoute.gallery == 'contemporary' }"
+                :class="{
+                  active: activeRoute.params.gallery == 'contemporary'
+                }"
                 href="/gallery/contemporary"
                 >Contemporary</a
               >
@@ -54,7 +56,7 @@
             <li class="sm-dropdown-item">
               <a
                 class="sm-dropdown-link"
-                :class="{ active: activeRoute.gallery == 'surreal' }"
+                :class="{ active: activeRoute.params.gallery == 'surreal' }"
                 href="/gallery/surreal"
                 >Surreal</a
               >

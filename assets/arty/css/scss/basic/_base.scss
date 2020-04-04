@@ -134,8 +134,8 @@ body {
 	}
 }
 
-.col-spacing-20, 
-.col-spacing-10, 
+.col-spacing-20,
+.col-spacing-10,
 .col-spacing-0 {
 	.row {
 		margin-right: -15px;
@@ -200,7 +200,7 @@ body {
 }
 .middle {
 	position: relative;
-	top: 50%;
+	top: 57%;
 	@include transform(translateY(-50%));
 }
 .bottom {
