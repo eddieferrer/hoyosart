@@ -14,7 +14,7 @@ body {
 	z-index: 1;
 	width: auto;
   min-height: 100%;
-  max-width: 950px;
+  max-width: 920px;
 }
 @include breakpoint-less(lg) {
 	.wrapper {
