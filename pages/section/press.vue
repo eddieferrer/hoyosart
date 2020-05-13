@@ -15,7 +15,8 @@
                 <p class="font-large font-weight-light">
                   <a
                     class="button-text-1 margin-top-20"
-                    href="@/assets/docs/AMHEssay-CarlosZuaresDejesus.pdf"
+                    href="/docs/AMHEssay-CarlosZuaresDejesus.pdf"
+                    download
                     >Uncanny Theater of Work Features Vision of Otherworldly
                     Realms</a
                   >
@@ -27,7 +28,8 @@
                 <p class="font-large font-weight-light margin-bottom-20">
                   <a
                     class="button-text-1 margin-top-20"
-                    href="@/assets/docs/AMHEssay-SandraMariaMonsalve.pdf"
+                    href="/docs/AMHEssay-SandraMariaMonsalve.pdf"
+                    download
                     >Meet Ana Maria Hoyos</a
                   >
                   <br />

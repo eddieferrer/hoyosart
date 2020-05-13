@@ -41,14 +41,19 @@
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Hoyos'</strong> works are in galleries, and private
-                  collection in the U.S and abroad. Recently her work showing in
-                  galleries in Europe-Paris, (Thuillier Gallery), and Liege
-                  Belgium, (L'Espace 30 Gallery). She has received several
-                  awards and honors and has been subject of numerous articles
-                  and publications.
+                  <strong>Hoyos'</strong> works are sold by collectors
+                  worldwide, namely in USA, Italy, France, Belgium, Spain, and
+                  Colombia.in galleries, and private collection in the U.S and
+                  abroad. Recently her work showing in galleries in Europe;
+                  Paris (Thuillier Gallery) Liege Belgium (L’Espace 30 Gallery),
+                  and Art Basel has been subject of numerous articles and
+                  publications.
                 </p>
-
+              </div>
+            </div>
+            <div class="row col-spacing-50">
+              <div class="col-12 col-lg-3 text-lg-right"></div>
+              <div class="col-12 col-lg-9">
                 <h5 class="font-weight-normal">
                   Selected Exhibitions &amp; Collections Include
                 </h5>
@@ -79,35 +84,43 @@
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Museum of Modern Art</strong>, Cartagena, Colombia.
+                  <strong>Museum of Modern Art</strong>,
+                  <em>"Artists Cartagena"</em> Cartagena, Colombia.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>The Shacknow Museum of Fine Arts</strong>, Plantation,
-                  FL.
+                  <strong>The Shacknow Museum of Fine Arts</strong>,
+                  <em>"It's Raining Art"</em> Plantation, FL.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Coral Springs Museum of Art</strong>, Coral Springs,
-                  FL.
+                  <strong>Coral Springs Museum of Art</strong>,
+                  <em>"Mixed Pallet"</em> Coral Springs, FL.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Agora Gallery</strong>, New York, NY.
+                  <strong>Agora Gallery</strong>,
+                  <em>"Masters Of Imagination"</em> New York, NY.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Ikarus Gallery</strong>, New York, NY.
+                  <strong>Ikarus Gallery</strong>,
+                  <em>"Herencia, Diversidad, Integracion"</em> New York, NY.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Coral Springs Art Guild Center for the Arts</strong>,
-                  Coral Springs,FL.
+                  <strong>Art Basel, Spectrum Miami Gallery</strong>,
+                  <em>"Help/Hope/Nepal"</em> Miami, FL.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Light House Center for the Arts</strong>, Tequesta,
-                  FL.
+                  <strong>The 4 Annual Art</strong>,
+                  <em>"Art Fair On The Water"</em> Fort Lauderdale, FL.
+                </p>
+
+                <p class="font-large font-weight-light">
+                  <strong>Light House Center for the Arts</strong>,
+                  <em>"First Annual Art"</em> Tequesta, FL.
                 </p>
 
                 <p class="font-large font-weight-light">
@@ -116,58 +129,38 @@
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Diego Victoria Fine Art Gallery</strong>, "Permanent
-                  Exhibit" North Miami Beach, FL.
+                  <strong>The Hangar</strong>, <em>"Art New"</em> Wynwood,
+                  Miami, FL.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>The Hangar</strong>, Wynwood, Miami, FL.
+                  <strong>Charlotte Art League</strong>,
+                  <em>"Accion Woman"</em> Charlotte, NC.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Art Serve Gallery</strong>, Ft. Lauderdale, FL.
+                  <strong>One Brickell Square</strong>,
+                  <em>"Solo Exhibit"</em> Miami, FL.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Obrapia Fine Art</strong>, Miami, FL.
+                  <strong>Arte Direct Gallery</strong>,
+                  <em>"16th Works"</em> Naples, FL.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Charlotte Art League</strong>, Charlotte, NC.
+                  <strong>The Writz Gallery</strong>,
+                  <em>"Artist Of The Month"</em> Miami, FL.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>One Brickell Square</strong>, Miami, FL.
+                  <strong>The Consulate of Colombia</strong>,
+                  <em>"Dimencions"</em> Miami, FL.
                 </p>
 
                 <p class="font-large font-weight-light">
-                  <strong>Arte Direct Gallery</strong>, Naples, FL.
-                </p>
-
-                <p class="font-large font-weight-light">
-                  <strong>The Writz Gallery</strong>, Miami, FL.
-                </p>
-
-                <p class="font-large font-weight-light">
-                  <strong>The Consulate of Colombia</strong>, Miami, FL.
-                </p>
-
-                <p class="font-large font-weight-light">
-                  <strong>Colombian Fine Arts Foundation</strong>, Coral Gables,
-                  FL.
-                </p>
-
-                <p class="font-large font-weight-light">
-                  <strong>Artist's Haven Gallery</strong>, Ft. Lauderdale, FL.
-                </p>
-
-                <p class="font-large font-weight-light">
-                  <strong>Fat Villages Art District</strong>, Ft. Lauderdale,
-                  FL.
-                </p>
-
-                <p class="font-large font-weight-light">
-                  <strong>The Visual Arts Gallery</strong>, Delray Beach, FL.
+                  <strong>Artist's Haven Gallery</strong>,
+                  <em>"A world of Artists"</em> Fort Lauderdale, FL.
                 </p>
               </div>
             </div>

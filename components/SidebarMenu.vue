@@ -80,6 +80,10 @@
           >
         </li>
         <li class="sm-item">
+          <a class="sm-link" href="/docs/HOYOS_RESUME.pdf" download>Resume</a>
+        </li>
+
+        <li class="sm-item">
           <a
             class="sm-link"
             :class="{ active: activeRoute.path.includes('contact-me') }"
