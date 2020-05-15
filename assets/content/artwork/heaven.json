@@ -1,13 +1,14 @@
 {
-  "date": "2020-03-29T22:37:34.903Z",
-  "title": "Heaven",
-  "height": "48",
   "width": "36",
-  "medium": "Oil On Canvas",
+  "numberOfFrames": 1,
+  "height": "48",
+  "date": "2020-03-29T22:37:34.903Z",
   "gallery": [
     "Home",
     "Abstracts"
   ],
+  "medium": "Oil On Canvas",
+  "title": "Heaven",
   "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1585524335/5e6ea5989b945959733623_mfes5f.jpg",
-  "numberOfFrames": 1
+  "galleryOrder": 1
 }
