@@ -1,13 +1,14 @@
 {
-  "date": "2020-03-29T18:58:13.162Z",
-  "title": "Living Nature",
-  "height": "48",
   "width": "36",
-  "medium": "Acrylic and Oil",
+  "numberOfFrames": 1,
+  "height": "48",
+  "date": "2020-03-29T18:58:13.162Z",
   "gallery": [
     "Home",
     "Contemporary"
   ],
+  "medium": "Acrylic and Oil",
+  "title": "Living Nature",
   "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1585508470/5e6ec78d00e0f456909356_zb4wfo.jpg",
-  "numberOfFrames": 1
+  "galleryOrder": 6
 }
