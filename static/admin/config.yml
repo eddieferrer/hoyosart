@@ -22,6 +22,7 @@ collections:
       - { label: 'Width', name: 'width', widget: 'string' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
+      - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Date (used for order)', name: 'date', widget: 'datetime'}
       - { label: 'Gallery',

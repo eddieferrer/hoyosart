@@ -4,10 +4,19 @@ export const state = () => ({
 
 export const mutations = {
   setArtwork(state, list) {
-    state.artwork = list.sort(function(a, b) {
+    const sortByDate = function(a, b) {
       a = new Date(a.date)
       b = new Date(b.date)
       return a > b ? -1 : a < b ? 1 : 0
+    }
+    const sortByOrder = function(a, b) {
+      return a.order - b.order
+    }
+    state.artwork = list.sort((a, b) => {
+      if (a.order === b.order) {
+        return sortByDate(a, b)
+      }
+      return sortByOrder(a, b)
     })
   }
 }
