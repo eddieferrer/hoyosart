@@ -1,12 +1,13 @@
 {
-  "numberOfFrames": 1,
-  "date": "2020-04-03T01:28:41.060Z",
-  "title": "New York New York",
-  "height": "40",
   "width": "30",
-  "medium": "Oil On Canvas",
+  "numberOfFrames": 1,
+  "height": "40",
+  "date": "2020-04-03T01:28:41.060Z",
   "gallery": [
     "Surreal"
   ],
-  "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1589312555/IMG_20200406_174749536_HDR_qpuoca.jpg"
+  "medium": "Oil On Canvas",
+  "title": "New York New York",
+  "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1589312555/IMG_20200406_174749536_HDR_qpuoca.jpg",
+  "galleryOrder": 10
 }
