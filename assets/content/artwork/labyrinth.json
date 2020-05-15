@@ -1,13 +1,14 @@
 {
-  "date": "2020-03-29T22:39:34.903Z",
-  "title": "Labyrinth",
-  "height": "40",
   "width": "60",
-  "medium": "Acrylic & Oil",
+  "numberOfFrames": 1,
+  "height": "40",
+  "date": "2020-03-29T22:39:34.903Z",
   "gallery": [
     "Home",
     "Abstracts"
   ],
+  "medium": "Acrylic & Oil",
+  "title": "Labyrinth",
   "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1585793547/5e6ea322c40b1673252674_ymclfr.jpg",
-  "numberOfFrames": 1
+  "galleryOrder": 2
 }
