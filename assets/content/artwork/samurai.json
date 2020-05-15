@@ -1,13 +1,14 @@
 {
-  "date": "2020-03-29T19:57:03.614Z",
-  "title": "Samurai",
-  "height": "60",
   "width": "40",
-  "medium": "Oil On Canvas",
+  "numberOfFrames": 2,
+  "height": "60",
+  "date": "2020-03-29T19:57:03.614Z",
   "gallery": [
     "Home",
     "Abstracts"
   ],
+  "medium": "Oil On Canvas",
+  "title": "Samurai",
   "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1585520531/5917711813302577088722_cljqvx.jpg",
-  "numberOfFrames": 2
+  "galleryOrder": 4
 }
