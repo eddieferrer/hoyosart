@@ -18,8 +18,8 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Height', name: 'height', widget: 'string' }
-      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'number', default: 40 }
+      - { label: 'Width', name: 'width', widget: 'number', default: 20 }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
       - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
@@ -42,8 +42,8 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Height', name: 'height', widget: 'string' }
-      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'number', default: 40 }
+      - { label: 'Width', name: 'width', widget: 'number', default: 20 }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
       - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
@@ -66,8 +66,8 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Height', name: 'height', widget: 'string' }
-      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'number', default: 40 }
+      - { label: 'Width', name: 'width', widget: 'number', default: 20 }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
       - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
@@ -90,8 +90,8 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Height', name: 'height', widget: 'string' }
-      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'number', default: 40 }
+      - { label: 'Width', name: 'width', widget: 'number', default: 20 }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
       - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
@@ -114,8 +114,8 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Height', name: 'height', widget: 'string' }
-      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'number', default: 40 }
+      - { label: 'Width', name: 'width', widget: 'number', default: 20 }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
       - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
@@ -138,8 +138,8 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Height', name: 'height', widget: 'string' }
-      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'number', default: 40 }
+      - { label: 'Width', name: 'width', widget: 'number', default: 20 }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
       - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
