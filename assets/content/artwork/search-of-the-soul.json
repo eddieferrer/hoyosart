@@ -1,13 +1,14 @@
 {
-  "date": "2020-03-29T19:57:03.614Z",
-  "title": "Search Of The Soul",
-  "height": "60",
   "width": "48",
-  "medium": "Acrylic",
+  "numberOfFrames": 1,
+  "height": "60",
+  "date": "2020-03-29T19:57:03.614Z",
   "gallery": [
     "Home",
     "Abstracts"
   ],
+  "medium": "Acrylic",
+  "title": "Search Of The Soul",
   "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1585511933/5e6ec0142aecc677490610_tc6gvl.jpg",
-  "numberOfFrames": 1
+  "galleryOrder": 3
 }
