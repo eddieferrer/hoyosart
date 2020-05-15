@@ -8,5 +8,6 @@
   "gallery": [
     "Abstracts"
   ],
-  "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1585975362/5d10360f5d852526894196_rnd4dq.jpg"
+  "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1585975362/5d10360f5d852526894196_rnd4dq.jpg",
+  "galleryOrder": 50
 }

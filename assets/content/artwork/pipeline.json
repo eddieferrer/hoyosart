@@ -8,5 +8,6 @@
   "gallery": [
     "Contemporary"
   ],
-  "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1585971334/5934cc76384f7191944316_e6fyqq.jpg"
+  "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1585971334/5934cc76384f7191944316_e6fyqq.jpg",
+  "galleryOrder": 50
 }

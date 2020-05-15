@@ -9,7 +9,7 @@ media_library:
     api_key: 712995591669847
 collections:
   - name: 'artwork'
-    label: 'Artwork'
+    label: 'All Artwork'
     format: 'json'
     folder: 'assets/content/artwork'
     create: true
@@ -31,4 +31,123 @@ collections:
           multiple: true,
           options: ['Home', 'Abstracts', 'Figurative Abstract', 'Contemporary', 'Surreal']
         }
-
+  - name: 'home'
+    label: 'Home'
+    format: 'json'
+    folder: 'assets/content/artwork'
+    filter: {field: "gallery", value: "Home"}
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'string' }
+      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Medium', name: 'medium', widget: 'string' }
+      - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
+      - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Date (used for order)', name: 'date', widget: 'datetime'}
+      - { label: 'Gallery',
+          name: 'gallery',
+          widget: 'select',
+          multiple: true,
+          options: ['Home', 'Abstracts', 'Figurative Abstract', 'Contemporary', 'Surreal']
+        }
+  - name: 'abstracts'
+    label: 'Abstracts'
+    format: 'json'
+    folder: 'assets/content/artwork'
+    filter: {field: "gallery", value: "Abstracts"}
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'string' }
+      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Medium', name: 'medium', widget: 'string' }
+      - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
+      - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Date (used for order)', name: 'date', widget: 'datetime'}
+      - { label: 'Gallery',
+          name: 'gallery',
+          widget: 'select',
+          multiple: true,
+          options: ['Home', 'Abstracts', 'Figurative Abstract', 'Contemporary', 'Surreal']
+        }
+  - name: 'figurative_abstract'
+    label: 'Figurative Abstract'
+    format: 'json'
+    folder: 'assets/content/artwork'
+    filter: {field: "gallery", value: "Figurative Abstract"}
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'string' }
+      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Medium', name: 'medium', widget: 'string' }
+      - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
+      - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Date (used for order)', name: 'date', widget: 'datetime'}
+      - { label: 'Gallery',
+          name: 'gallery',
+          widget: 'select',
+          multiple: true,
+          options: ['Home', 'Abstracts', 'Figurative Abstract', 'Contemporary', 'Surreal']
+        }
+  - name: 'contemporary'
+    label: 'Contemporary'
+    format: 'json'
+    folder: 'assets/content/artwork'
+    filter: {field: "gallery", value: "Contemporary"}
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'string' }
+      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Medium', name: 'medium', widget: 'string' }
+      - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
+      - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Date (used for order)', name: 'date', widget: 'datetime'}
+      - { label: 'Gallery',
+          name: 'gallery',
+          widget: 'select',
+          multiple: true,
+          options: ['Home', 'Abstracts', 'Figurative Abstract', 'Contemporary', 'Surreal']
+        }
+  - name: 'surreal'
+    label: 'Surreal'
+    format: 'json'
+    folder: 'assets/content/artwork'
+    filter: {field: "gallery", value: "Surreal"}
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Height', name: 'height', widget: 'string' }
+      - { label: 'Width', name: 'width', widget: 'string' }
+      - { label: 'Medium', name: 'medium', widget: 'string' }
+      - { label: 'Number of Frames', name: 'numberOfFrames', widget: 'number', default: 1 }
+      - { label: 'Order', name: 'galleryOrder', widget: 'number', default: 50 }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Date (used for order)', name: 'date', widget: 'datetime'}
+      - { label: 'Gallery',
+          name: 'gallery',
+          widget: 'select',
+          multiple: true,
+          options: ['Home', 'Abstracts', 'Figurative Abstract', 'Contemporary', 'Surreal']
+        }

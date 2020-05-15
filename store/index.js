@@ -10,10 +10,10 @@ export const mutations = {
       return a > b ? -1 : a < b ? 1 : 0
     }
     const sortByOrder = function(a, b) {
-      return a.order - b.order
+      return a.galleryOrder - b.galleryOrder
     }
     state.artwork = list.sort((a, b) => {
-      if (a.order === b.order) {
+      if (a.galleryOrder === b.galleryOrder) {
         return sortByDate(a, b)
       }
       return sortByOrder(a, b)
