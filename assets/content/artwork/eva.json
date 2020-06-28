@@ -1,13 +1,13 @@
 {
-  "numberOfFrames": 1,
-  "date": "2020-04-03T01:38:20.188Z",
-  "title": "Eva",
-  "height": 40,
   "width": 40,
-  "medium": "Oil On Canvas",
+  "numberOfFrames": 1,
+  "height": 40,
+  "date": "2020-04-03T01:38:20.188Z",
   "gallery": [
     "Surreal"
   ],
-  "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1585877706/5917817ad3f9c661996660_v7clv1.jpg",
-  "galleryOrder": 50
+  "medium": "Oil On Canvas",
+  "title": "Eva",
+  "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1593386990/Eva_30x30_Oil_siguzj.jpg",
+  "galleryOrder": 0
 }
