@@ -1,14 +1,13 @@
 {
-  "date": "2020-03-29T22:35:34.903Z",
-  "title": "Serenity",
-  "height": 48,
   "width": 60,
-  "medium": "Acrylic & Oil",
+  "numberOfFrames": 1,
+  "height": 48,
+  "date": "2020-03-29T22:35:34.903Z",
   "gallery": [
-    "Home",
     "Abstracts"
   ],
+  "medium": "Acrylic & Oil",
+  "title": "Serenity",
   "image": "https://res.cloudinary.com/hoyosartimagecloud/image/upload/v1585524155/5e6ebffad2c9f590258029_oc01cy.jpg",
-  "numberOfFrames": 1,
-  "galleryOrder": 50
+  "galleryOrder": 10
 }
