@@ -6,9 +6,7 @@
           <div class="col-12">
             <div class="row col-spacing-50">
               <div class="col-12 col-lg-3 text-lg-right">
-                <h1 class="margin-0">
-                  Contact Me
-                </h1>
+                <h1 class="margin-0">Contact Me</h1>
               </div>
               <div class="col-12 col-lg-7">
                 <p class="font-large font-weight-light">

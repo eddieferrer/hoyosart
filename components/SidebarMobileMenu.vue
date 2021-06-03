@@ -3,9 +3,7 @@
   <div class="sm-mobile dark">
     <div class="container-fluid">
       <div class="sm-logo">
-        <h4 class="uppercase letter-spacing-2">
-          Ana Maria Hoyos
-        </h4>
+        <h4 class="uppercase letter-spacing-2">Ana Maria Hoyos</h4>
       </div>
       <!-- Sideber Menu Toggle -->
       <button class="sm-toggle">

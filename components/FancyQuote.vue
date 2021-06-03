@@ -1,5 +1,5 @@
 <template>
-  <div class="testimonial-quote group" style="margin-right: auto;">
+  <div class="testimonial-quote group" style="margin-right: auto">
     <div class="quote-container">
       <div>
         <blockquote>
@@ -19,17 +19,17 @@ export default {
   props: {
     quote: {
       type: String,
-      default: ''
+      default: '',
     },
     author: {
       type: String,
-      default: ''
+      default: '',
     },
     authorTitle: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>
 <style lang="scss" scoped>

@@ -4,7 +4,13 @@
     <div class="section padding-y-30">
       <div class="container">
         <div
-          class="gallery portfolio-masonry portfolio-title-outside hover-style-3 column-3 spacing-30"
+          class="
+            gallery
+            portfolio-masonry portfolio-title-outside
+            hover-style-3
+            column-3
+            spacing-30
+          "
         >
           <template v-for="(artwork, index) in activeArtwork">
             <div :key="index" class="portfolio-item">
@@ -12,14 +18,14 @@
                 <a
                   :href="
                     'https://res.cloudinary.com/hoyosartimagecloud/image/upload/c_fit,h_600,w_600/v1585526865/' +
-                      artwork.imageFilename
+                    artwork.imageFilename
                   "
                   :data-gallery-title="artwork.title"
                 >
                   <img
                     :src="
                       'https://res.cloudinary.com/hoyosartimagecloud/image/upload/c_fit,h_600,w_600/v1585526865/' +
-                        artwork.imageFilename
+                      artwork.imageFilename
                     "
                     alt=""
                   />
@@ -57,10 +63,11 @@ export default {
   computed: {
     ...mapGetters([
       'getHomeArtwork',
+      'getImpressionistArtwork',
       'getFigurativeAbstractArtwork',
       'getAbstractsArtwork',
       'getContemporaryArtwork',
-      'getSurrealArtwork'
+      'getSurrealArtwork',
     ]),
     activeRoute() {
       return this.$route.params
@@ -68,6 +75,9 @@ export default {
     activeArtwork() {
       if (this.activeRoute.gallery === 'figurative-abstracts') {
         return this.getFigurativeAbstractArtwork
+      }
+      if (this.activeRoute.gallery === 'impressionist') {
+        return this.getImpressionistArtwork
       }
       if (this.activeRoute.gallery === 'abstracts') {
         return this.getAbstractsArtwork
@@ -79,8 +89,8 @@ export default {
         return this.getSurrealArtwork
       }
       return this.getHomeArtwork
-    }
-  }
+    },
+  },
 }
 </script>
 

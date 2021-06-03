@@ -29,7 +29,17 @@
               <a
                 class="sm-dropdown-link"
                 :class="{
-                  active: activeRoute.params.gallery == 'figurative-abstracts'
+                  active: activeRoute.params.gallery == 'impressionist',
+                }"
+                href="/gallery/impressionist"
+                >Impressionist</a
+              >
+            </li>
+            <li class="sm-dropdown-item">
+              <a
+                class="sm-dropdown-link"
+                :class="{
+                  active: activeRoute.params.gallery == 'figurative-abstracts',
                 }"
                 href="/gallery/figurative-abstracts"
                 >Figurative Abstracts</a
@@ -47,7 +57,7 @@
               <a
                 class="sm-dropdown-link"
                 :class="{
-                  active: activeRoute.params.gallery == 'contemporary'
+                  active: activeRoute.params.gallery == 'contemporary',
                 }"
                 href="/gallery/contemporary"
                 >Contemporary</a
@@ -117,8 +127,8 @@ export default {
   computed: {
     activeRoute() {
       return this.$route
-    }
-  }
+    },
+  },
 }
 </script>
 <style lang="scss" scoped>

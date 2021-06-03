@@ -1,15 +1,15 @@
 export const state = () => ({
-  artwork: []
+  artwork: [],
 })
 
 export const mutations = {
   setArtwork(state, list) {
-    const sortByDate = function(a, b) {
+    const sortByDate = function (a, b) {
       a = new Date(a.date)
       b = new Date(b.date)
       return a > b ? -1 : a < b ? 1 : 0
     }
-    const sortByOrder = function(a, b) {
+    const sortByOrder = function (a, b) {
       return a.galleryOrder - b.galleryOrder
     }
     state.artwork = list.sort((a, b) => {
@@ -18,12 +18,17 @@ export const mutations = {
       }
       return sortByOrder(a, b)
     })
-  }
+  },
 }
 
 export const getters = {
   getHomeArtwork(state) {
     return state.artwork.filter((artwork) => artwork.gallery.includes('Home'))
+  },
+  getImpressionistArtwork(state) {
+    return state.artwork.filter((artwork) =>
+      artwork.gallery.includes('Impressionist')
+    )
   },
   getFigurativeAbstractArtwork(state) {
     return state.artwork.filter((artwork) =>
@@ -44,7 +49,7 @@ export const getters = {
     return state.artwork.filter((artwork) =>
       artwork.gallery.includes('Surreal')
     )
-  }
+  },
 }
 
 export const actions = {
@@ -67,5 +72,5 @@ export const actions = {
         return element
       })
     )
-  }
+  },
 }

@@ -6,9 +6,7 @@
           <div class="col-12">
             <div class="row col-spacing-50">
               <div class="col-12 col-lg-3 text-lg-right">
-                <h1 class="margin-0">
-                  About Me
-                </h1>
+                <h1 class="margin-0">About Me</h1>
               </div>
               <div class="col-12 col-lg-7">
                 <p class="font-large font-weight-light">
@@ -33,7 +31,7 @@
                 <img
                   src="@/assets/images/name-signature.png"
                   alt=""
-                  style="width: 140px; float: left;"
+                  style="width: 140px; float: left"
                 />
               </div>
             </div>

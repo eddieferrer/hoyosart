@@ -14,15 +14,7 @@ import SidebarMobileMenu from '~/components/SidebarMobileMenu.vue'
 export default {
   components: {
     SidebarMenu,
-    SidebarMobileMenu
-  },
-  computed: {
-    ...mapGetters(['getHomeArtwork'])
-  },
-  mounted() {
-    this.$nextTick(() => {
-      require('@/static/arty/js/functions.js')
-    })
+    SidebarMobileMenu,
   },
   head() {
     return {
@@ -30,15 +22,23 @@ export default {
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
         {
           src: '/arty/plugins/jquery.min.js',
-          body: true
+          body: true,
         },
         {
           src: '/arty/plugins/plugins.js',
-          body: true
-        }
-      ]
+          body: true,
+        },
+      ],
     }
-  }
+  },
+  computed: {
+    ...mapGetters(['getHomeArtwork']),
+  },
+  mounted() {
+    this.$nextTick(() => {
+      require('@/static/arty/js/functions.js')
+    })
+  },
 }
 </script>
 

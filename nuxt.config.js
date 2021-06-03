@@ -1,5 +1,4 @@
 export default {
-  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -11,14 +10,14 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     bodyAttrs: {
       'data-preloader': '1',
-      class: 'sm-spacer-left loaded'
-    }
+      class: 'sm-spacer-left loaded',
+    },
   },
   /*
    ** Customize the progress-bar color
@@ -36,7 +35,7 @@ export default {
     '@/assets/arty/css/scss/main.scss',
     '@fortawesome/fontawesome-svg-core/styles.css',
     '@/assets/arty/plugins/themify/themify-icons.min.css',
-    '@/assets/arty/plugins/simple-line-icons/css/simple-line-icons.css'
+    '@/assets/arty/plugins/simple-line-icons/css/simple-line-icons.css',
   ],
   /*
    ** Plugins to load before mounting the App
@@ -49,14 +48,14 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
   ],
   /*
    ** Build configuration
@@ -65,14 +64,14 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
   },
   generate: {
     routes: [
       '/gallery/figurative-abstracts',
       '/gallery/abstracts',
       '/gallery/contemporary',
-      '/gallery/surreal'
-    ]
-  }
+      '/gallery/surreal',
+    ],
+  },
 }

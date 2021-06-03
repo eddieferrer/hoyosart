@@ -4,7 +4,13 @@
     <div class="section padding-y-30">
       <div class="container">
         <div
-          class="gallery portfolio-masonry portfolio-title-outside hover-style-3 column-3 spacing-30"
+          class="
+            gallery
+            portfolio-masonry portfolio-title-outside
+            hover-style-3
+            column-3
+            spacing-30
+          "
         >
           <template v-for="(artwork, index) in getHomeArtwork">
             <template v-if="index == 2">
@@ -30,14 +36,14 @@
                 <a
                   :href="
                     'https://res.cloudinary.com/hoyosartimagecloud/image/upload/c_fit,h_600,w_600/v1585526865/' +
-                      artwork.imageFilename
+                    artwork.imageFilename
                   "
                   :data-gallery-title="artwork.title"
                 >
                   <img
                     :src="
                       'https://res.cloudinary.com/hoyosartimagecloud/image/upload/c_fit,h_600,w_600/v1585526865/' +
-                        artwork.imageFilename
+                      artwork.imageFilename
                     "
                     alt=""
                   />
@@ -70,11 +76,11 @@ import FancyQuote from '~/components/FancyQuote.vue'
 
 export default {
   components: {
-    FancyQuote
+    FancyQuote,
   },
   computed: {
-    ...mapGetters(['getHomeArtwork'])
-  }
+    ...mapGetters(['getHomeArtwork']),
+  },
 }
 </script>
 
