@@ -29,16 +29,6 @@
               <a
                 class="sm-dropdown-link"
                 :class="{
-                  active: activeRoute.params.gallery == 'impressionist',
-                }"
-                href="/gallery/impressionist"
-                >Impressionist</a
-              >
-            </li>
-            <li class="sm-dropdown-item">
-              <a
-                class="sm-dropdown-link"
-                :class="{
                   active: activeRoute.params.gallery == 'figurative-abstracts',
                 }"
                 href="/gallery/figurative-abstracts"
